@@ -1,0 +1,11 @@
+com\optical\receiver\camera\WebcamCapture.class
+com\optical\receiver\ui\ReceiverController$1.class
+com\optical\receiver\ui\ReceiverController.class
+com\optical\receiver\util\ReceiverConfig.class
+com\optical\receiver\ReceiverApp.class
+com\optical\receiver\assembler\FileAssembler.class
+com\optical\receiver\service\ReceptionService$State.class
+com\optical\receiver\decoder\QRCodeDecoder.class
+com\optical\receiver\ReceiverLauncher.class
+com\optical\receiver\service\ReceptionService.class
+com\optical\receiver\service\ReceptionService$1.class

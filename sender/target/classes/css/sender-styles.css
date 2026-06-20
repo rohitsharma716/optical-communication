@@ -1,0 +1,227 @@
+/* ============================================================
+   Optical File Transfer — Sender Stylesheet
+   Dark theme with vibrant accent colors and glassmorphism
+   ============================================================ */
+
+/* --- Root & Global --- */
+.root-pane {
+    -fx-background-color: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+
+.main-scroll {
+    -fx-background: transparent;
+    -fx-background-color: transparent;
+}
+
+.main-scroll > .viewport {
+    -fx-background-color: transparent;
+}
+
+/* --- Typography --- */
+.app-title {
+    -fx-font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(100, 100, 255, 0.5), 15, 0, 0, 0);
+}
+
+.app-subtitle {
+    -fx-font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-font-weight: normal;
+    -fx-text-fill: #7f8ce0;
+    -fx-letter-spacing: 8px;
+}
+
+.info-label {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #e0e0e0;
+}
+
+.info-label-dim {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-font-size: 13px;
+    -fx-text-fill: #888ea8;
+}
+
+.status-label {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4fc3f7;
+}
+
+.fps-label {
+    -fx-font-family: 'Consolas', 'Courier New', monospace;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #80cbc4;
+    -fx-min-width: 80px;
+}
+
+/* --- Section Boxes (Glassmorphism) --- */
+.section-box {
+    -fx-background-color: rgba(255, 255, 255, 0.06);
+    -fx-background-radius: 16;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-radius: 16;
+    -fx-border-width: 1;
+    -fx-padding: 18 24 18 24;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 4);
+}
+
+/* --- Buttons --- */
+.primary-button {
+    -fx-background-color: linear-gradient(to right, #667eea, #764ba2);
+    -fx-text-fill: white;
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 28 10 28;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(102, 126, 234, 0.4), 8, 0, 0, 2);
+}
+
+.primary-button:hover {
+    -fx-background-color: linear-gradient(to right, #7b93f5, #8b5fbf);
+    -fx-effect: dropshadow(gaussian, rgba(102, 126, 234, 0.6), 12, 0, 0, 3);
+}
+
+.primary-button:pressed {
+    -fx-background-color: linear-gradient(to right, #5568d3, #6a4093);
+}
+
+.primary-button:disabled {
+    -fx-background-color: rgba(100, 100, 140, 0.3);
+    -fx-text-fill: rgba(255, 255, 255, 0.35);
+    -fx-effect: none;
+}
+
+.start-button {
+    -fx-background-color: linear-gradient(to right, #11998e, #38ef7d);
+    -fx-effect: dropshadow(gaussian, rgba(17, 153, 142, 0.4), 8, 0, 0, 2);
+}
+
+.start-button:hover {
+    -fx-background-color: linear-gradient(to right, #15b3a6, #4ff791);
+    -fx-effect: dropshadow(gaussian, rgba(17, 153, 142, 0.6), 12, 0, 0, 3);
+}
+
+.start-button:disabled {
+    -fx-background-color: rgba(100, 100, 140, 0.3);
+    -fx-text-fill: rgba(255, 255, 255, 0.35);
+    -fx-effect: none;
+}
+
+.control-button {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-text-fill: #e0e0e0;
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 24 10 24;
+    -fx-background-radius: 10;
+    -fx-border-color: rgba(255, 255, 255, 0.15);
+    -fx-border-radius: 10;
+    -fx-cursor: hand;
+}
+
+.control-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.18);
+    -fx-border-color: rgba(255, 255, 255, 0.25);
+}
+
+.control-button:disabled {
+    -fx-background-color: rgba(255, 255, 255, 0.04);
+    -fx-text-fill: rgba(255, 255, 255, 0.2);
+    -fx-border-color: rgba(255, 255, 255, 0.05);
+}
+
+.stop-button {
+    -fx-border-color: rgba(255, 82, 82, 0.3);
+}
+
+.stop-button:hover {
+    -fx-background-color: rgba(255, 82, 82, 0.2);
+    -fx-border-color: rgba(255, 82, 82, 0.5);
+}
+
+/* --- QR Display --- */
+.qr-container {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 12;
+    -fx-padding: 10;
+    -fx-effect: dropshadow(gaussian, rgba(100, 126, 234, 0.3), 20, 0, 0, 0);
+    -fx-alignment: center;
+}
+
+/* --- Progress Bar --- */
+.transfer-progress {
+    -fx-pref-height: 8px;
+    -fx-background-radius: 4;
+}
+
+.transfer-progress > .bar {
+    -fx-background-color: linear-gradient(to right, #667eea, #764ba2);
+    -fx-background-radius: 4;
+    -fx-background-insets: 0;
+}
+
+.transfer-progress > .track {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-background-radius: 4;
+    -fx-background-insets: 0;
+}
+
+/* --- Slider --- */
+.slider > .track {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-pref-height: 4px;
+    -fx-background-radius: 2;
+}
+
+.slider > .thumb {
+    -fx-background-color: #667eea;
+    -fx-background-radius: 50%;
+    -fx-padding: 8;
+    -fx-effect: dropshadow(gaussian, rgba(102, 126, 234, 0.5), 6, 0, 0, 0);
+}
+
+.slider > .thumb:hover {
+    -fx-background-color: #7b93f5;
+}
+
+.slider .axis > .tick-mark {
+    -fx-stroke: rgba(255, 255, 255, 0.2);
+}
+
+.slider .axis > .tick-label {
+    -fx-text-fill: rgba(255, 255, 255, 0.5);
+    -fx-font-size: 10px;
+}
+
+/* --- Scrollbar Styling --- */
+.scroll-bar > .thumb {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-background-radius: 4;
+}
+
+.scroll-bar > .track {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar > .increment-button,
+.scroll-bar > .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.scroll-bar > .increment-button > .increment-arrow,
+.scroll-bar > .decrement-button > .decrement-arrow {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-shape: "";
+}

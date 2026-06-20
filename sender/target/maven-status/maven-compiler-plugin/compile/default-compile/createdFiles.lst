@@ -1,0 +1,7 @@
+com\optical\sender\SenderApp.class
+com\optical\sender\qr\QRCodeGenerator.class
+com\optical\sender\SenderLauncher.class
+com\optical\sender\ui\SenderController.class
+com\optical\sender\service\TransferService.class
+com\optical\sender\util\TransferConfig.class
+com\optical\sender\chunk\FileChunker.class

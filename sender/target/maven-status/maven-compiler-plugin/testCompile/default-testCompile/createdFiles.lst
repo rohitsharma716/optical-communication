@@ -1,0 +1,3 @@
+com\optical\sender\qr\QRCodeGeneratorTest.class
+com\optical\sender\service\TransferServiceTest.class
+com\optical\sender\chunk\FileChunkerTest.class

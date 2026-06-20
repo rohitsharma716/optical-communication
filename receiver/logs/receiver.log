@@ -1,0 +1,1123 @@
+2026-06-20 11:37:21.503 [main] INFO  com.optical.sender.service.TransferService - Preparing transfer for file: bigger_song.mp3
+2026-06-20 11:37:21.506 [main] INFO  com.optical.sender.service.TransferService - Read 10000 bytes from bigger_song.mp3
+2026-06-20 11:37:21.509 [main] INFO  com.optical.sender.service.TransferService - SHA-256 hash: 712fc649b65a0dbb3693c09e07df8fae43399119a6782e55a9b8995846f09f24
+2026-06-20 11:37:21.509 [main] INFO  com.optical.sender.service.TransferService - Compressed: 10000 bytes → 10023 bytes (ratio: 100.2%)
+2026-06-20 11:37:21.509 [main] INFO  com.optical.sender.service.TransferService - Transfer ID: fe5059a8-c588-4384-8bcc-631721ad993e
+2026-06-20 11:37:21.509 [main] INFO  com.optical.sender.chunk.FileChunker - Splitting 10023 bytes into 11 chunks of max 1000 bytes each
+2026-06-20 11:37:21.509 [main] INFO  com.optical.sender.chunk.FileChunker - Created 11 chunk packets for transfer fe5059a8-c588-4384-8bcc-631721ad993e
+2026-06-20 11:37:21.730 [main] INFO  com.optical.sender.service.TransferService - Transfer prepared: 13 total packets (1 header + 11 chunks + 1 end)
+2026-06-20 11:37:22.058 [main] INFO  com.optical.sender.service.TransferService - Preparing transfer for file: test_song.mp3
+2026-06-20 11:37:22.058 [main] INFO  com.optical.sender.service.TransferService - Read 60 bytes from test_song.mp3
+2026-06-20 11:37:22.058 [main] INFO  com.optical.sender.service.TransferService - SHA-256 hash: 10d598cb22bd5c1e13784f6dd198364bac130dc423c63887e68568897124e0bc
+2026-06-20 11:37:22.058 [main] INFO  com.optical.sender.service.TransferService - Compressed: 60 bytes → 77 bytes (ratio: 128.3%)
+2026-06-20 11:37:22.058 [main] INFO  com.optical.sender.service.TransferService - Transfer ID: c2768cca-6d31-4e2d-a0b8-e9d7ba90ea89
+2026-06-20 11:37:22.058 [main] INFO  com.optical.sender.chunk.FileChunker - Splitting 77 bytes into 1 chunks of max 1000 bytes each
+2026-06-20 11:37:22.058 [main] INFO  com.optical.sender.chunk.FileChunker - Created 1 chunk packets for transfer c2768cca-6d31-4e2d-a0b8-e9d7ba90ea89
+2026-06-20 11:37:22.058 [main] INFO  com.optical.sender.service.TransferService - Transfer prepared: 3 total packets (1 header + 1 chunks + 1 end)
+2026-06-20 11:37:22.175 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 11:37:22.175 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: c2768cca-6d31-4e2d-a0b8-e9d7ba90ea89, File: test_song.mp3, Size: 60, Chunks: 1
+2026-06-20 11:37:22.216 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/1
+2026-06-20 11:37:22.216 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 11:37:22.216 [main] INFO  com.optical.receiver.service.ReceptionService - All 1 chunks received! Ready for assembly.
+2026-06-20 11:37:22.240 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer END packet received. Chunks: 1/1
+2026-06-20 11:37:22.240 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 11:37:22.240 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 1 chunks, expected file: test_song.mp3
+2026-06-20 11:37:22.240 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 1 chunks...
+2026-06-20 11:37:22.240 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 77 bytes
+2026-06-20 11:37:22.240 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 11:37:22.240 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 77 bytes → 60 bytes
+2026-06-20 11:37:22.240 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: 10d598cb22bd5c1e13784f6dd198364bac130dc423c63887e68568897124e0bc, actual: 10d598cb22bd5c1e13784f6dd198364bac130dc423c63887e68568897124e0bc
+2026-06-20 11:37:22.240 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 11:37:22.240 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit3629629873710209847\output\test_song.mp3 (60 bytes)
+2026-06-20 11:37:22.256 [main] INFO  com.optical.sender.service.TransferService - Preparing transfer for file: retrans.mp3
+2026-06-20 11:37:22.258 [main] INFO  com.optical.sender.service.TransferService - Read 40 bytes from retrans.mp3
+2026-06-20 11:37:22.258 [main] INFO  com.optical.sender.service.TransferService - SHA-256 hash: bae2fead0c67e905d5299c7c51d9c16a8df180e4cba1add9b1e384dbe17655dc
+2026-06-20 11:37:22.259 [main] INFO  com.optical.sender.service.TransferService - Compressed: 40 bytes → 57 bytes (ratio: 142.5%)
+2026-06-20 11:37:22.260 [main] INFO  com.optical.sender.service.TransferService - Transfer ID: 475ecafa-2c03-43c9-bb33-4a08a88824a8
+2026-06-20 11:37:22.260 [main] INFO  com.optical.sender.chunk.FileChunker - Splitting 57 bytes into 1 chunks of max 1000 bytes each
+2026-06-20 11:37:22.260 [main] INFO  com.optical.sender.chunk.FileChunker - Created 1 chunk packets for transfer 475ecafa-2c03-43c9-bb33-4a08a88824a8
+2026-06-20 11:37:22.261 [main] INFO  com.optical.sender.service.TransferService - Transfer prepared: 3 total packets (1 header + 1 chunks + 1 end)
+2026-06-20 11:37:22.297 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 11:37:22.297 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: 475ecafa-2c03-43c9-bb33-4a08a88824a8, File: retrans.mp3, Size: 40, Chunks: 1
+2026-06-20 11:37:22.315 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer END packet received. Chunks: 0/1
+2026-06-20 11:37:22.367 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/1
+2026-06-20 11:37:22.367 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 11:37:22.367 [main] INFO  com.optical.receiver.service.ReceptionService - All 1 chunks received! Ready for assembly.
+2026-06-20 11:37:22.392 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer END packet received. Chunks: 1/1
+2026-06-20 11:37:22.392 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 11:37:22.392 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 1 chunks, expected file: retrans.mp3
+2026-06-20 11:37:22.392 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 1 chunks...
+2026-06-20 11:37:22.392 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 57 bytes
+2026-06-20 11:37:22.392 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 11:37:22.392 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 57 bytes → 40 bytes
+2026-06-20 11:37:22.392 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: bae2fead0c67e905d5299c7c51d9c16a8df180e4cba1add9b1e384dbe17655dc, actual: bae2fead0c67e905d5299c7c51d9c16a8df180e4cba1add9b1e384dbe17655dc
+2026-06-20 11:37:22.392 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 11:37:22.398 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit362641891474145242\output3\retrans.mp3 (40 bytes)
+2026-06-20 11:37:22.417 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 1 chunks, expected file: dup.mp3
+2026-06-20 11:37:22.417 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 1 chunks...
+2026-06-20 11:37:22.417 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 24 bytes
+2026-06-20 11:37:22.417 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 11:37:22.417 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 24 bytes → 4 bytes
+2026-06-20 11:37:22.417 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08, actual: 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
+2026-06-20 11:37:22.417 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 11:37:22.422 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit16110701416416007897\dup.mp3 (4 bytes)
+2026-06-20 11:37:22.424 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 1 chunks, expected file: dup.mp3
+2026-06-20 11:37:22.425 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 1 chunks...
+2026-06-20 11:37:22.425 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 24 bytes
+2026-06-20 11:37:22.425 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 11:37:22.425 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 24 bytes → 4 bytes
+2026-06-20 11:37:22.427 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08, actual: 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
+2026-06-20 11:37:22.427 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 11:37:22.437 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit16110701416416007897\dup_1.mp3 (4 bytes)
+2026-06-20 11:37:22.456 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 51 chunks, expected file: large.mp3
+2026-06-20 11:37:22.457 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 51 chunks...
+2026-06-20 11:37:22.457 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 50038 bytes
+2026-06-20 11:37:22.457 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 11:37:22.458 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 50038 bytes → 50000 bytes
+2026-06-20 11:37:22.461 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: 0c9979bee37368a3c2d18779916129d5954369b238dc5c0aabe5b9303f71fb37, actual: 0c9979bee37368a3c2d18779916129d5954369b238dc5c0aabe5b9303f71fb37
+2026-06-20 11:37:22.462 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 11:37:22.465 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit9550895983358601255\large.mp3 (50000 bytes)
+2026-06-20 11:37:22.477 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 5 chunks, expected file: test.mp3
+2026-06-20 11:37:22.477 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 5 chunks...
+2026-06-20 11:37:22.477 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 50 bytes
+2026-06-20 11:37:22.477 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 11:37:22.477 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 50 bytes → 32 bytes
+2026-06-20 11:37:22.478 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: f865ddfdc2970faed8a666a20db9df0ff2bc75e1b9e0f8868900b9ebe9d6b84a, actual: f865ddfdc2970faed8a666a20db9df0ff2bc75e1b9e0f8868900b9ebe9d6b84a
+2026-06-20 11:37:22.478 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 11:37:22.480 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit8479439943647559339\test.mp3 (32 bytes)
+2026-06-20 11:37:22.490 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 2 chunks, expected file: test.mp3
+2026-06-20 11:37:22.502 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 1 chunks, expected file: test.mp3
+2026-06-20 11:37:22.503 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 1 chunks...
+2026-06-20 11:37:22.503 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 29 bytes
+2026-06-20 11:37:22.503 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 11:37:22.503 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 29 bytes → 9 bytes
+2026-06-20 11:37:22.503 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: wrong_hash_value, actual: 916f0027a575074ce72a331777c3478d6513f786a591bd892da1a577bf2335f9
+2026-06-20 11:37:22.686 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 11:37:22.687 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 1000, Chunks: 5
+2026-06-20 11:37:22.688 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer END packet received. Chunks: 0/5
+2026-06-20 11:37:22.693 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 11:37:22.693 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: song.mp3, Size: 5000, Chunks: 5
+2026-06-20 11:37:22.698 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 11:37:22.699 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 3000, Chunks: 3
+2026-06-20 11:37:22.699 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/3
+2026-06-20 11:37:22.703 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 11:37:22.704 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 1000, Chunks: 1
+2026-06-20 11:37:22.707 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 11:37:22.708 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 1000, Chunks: 3
+2026-06-20 11:37:22.709 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/3
+2026-06-20 11:37:22.715 [main] WARN  com.optical.shared.protocol.PacketSerializer - Failed to detect packet type from JSON: not valid json at all
+com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'not': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2572)
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2598)
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2606)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:765)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:3018)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2996)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._matchToken(ReaderBasedJsonParser.java:2761)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._matchNull(ReaderBasedJsonParser.java:2747)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:750)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4934)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3280)
+	at com.optical.shared.protocol.PacketSerializer.detectPacketType(PacketSerializer.java:83)
+	at com.optical.receiver.service.ReceptionService.processPacket(ReceptionService.java:67)
+	at com.optical.receiver.service.ReceptionServiceTest.processPacket_invalidJson_ignored(ReceptionServiceTest.java:155)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2026-06-20 11:37:22.722 [main] DEBUG com.optical.receiver.service.ReceptionService - Ignoring unknown packet type
+2026-06-20 11:37:22.726 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 11:37:22.726 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 200, Chunks: 2
+2026-06-20 11:37:22.727 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/2
+2026-06-20 11:37:22.728 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 2/2
+2026-06-20 11:37:22.729 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 11:37:22.729 [main] INFO  com.optical.receiver.service.ReceptionService - All 2 chunks received! Ready for assembly.
+2026-06-20 11:37:22.732 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 11:37:22.732 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 1000, Chunks: 2
+2026-06-20 11:37:22.733 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/2
+2026-06-20 11:37:22.734 [main] INFO  com.optical.receiver.service.ReceptionService - Reception service reset
+2026-06-20 11:37:22.745 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 11:37:22.745 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 1000, Chunks: 1
+2026-06-20 11:37:22.747 [main] DEBUG com.optical.receiver.service.ReceptionService - Ignoring chunk with mismatched transferId: wrong-id
+2026-06-20 11:38:52.375 [main] INFO  com.optical.sender.service.TransferService - Preparing transfer for file: bigger_song.mp3
+2026-06-20 11:38:52.375 [main] INFO  com.optical.sender.service.TransferService - Read 10000 bytes from bigger_song.mp3
+2026-06-20 11:38:52.375 [main] INFO  com.optical.sender.service.TransferService - SHA-256 hash: 712fc649b65a0dbb3693c09e07df8fae43399119a6782e55a9b8995846f09f24
+2026-06-20 11:38:52.386 [main] INFO  com.optical.sender.service.TransferService - Compressed: 10000 bytes → 10023 bytes (ratio: 100.2%)
+2026-06-20 11:38:52.386 [main] INFO  com.optical.sender.service.TransferService - Transfer ID: da5b7659-0ddf-4805-99fb-6a53ca6a9c15
+2026-06-20 11:38:52.386 [main] INFO  com.optical.sender.chunk.FileChunker - Splitting 10023 bytes into 11 chunks of max 1000 bytes each
+2026-06-20 11:38:52.386 [main] INFO  com.optical.sender.chunk.FileChunker - Created 11 chunk packets for transfer da5b7659-0ddf-4805-99fb-6a53ca6a9c15
+2026-06-20 11:38:52.600 [main] INFO  com.optical.sender.service.TransferService - Transfer prepared: 13 total packets (1 header + 11 chunks + 1 end)
+2026-06-20 11:38:52.986 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 11:38:52.986 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: da5b7659-0ddf-4805-99fb-6a53ca6a9c15, File: bigger_song.mp3, Size: 10000, Chunks: 11
+2026-06-20 11:38:53.125 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/11
+2026-06-20 11:38:53.219 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 2/11
+2026-06-20 11:38:53.293 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 3/11
+2026-06-20 11:38:53.355 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 4/11
+2026-06-20 11:38:53.443 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 5/11
+2026-06-20 11:38:53.519 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 6/11
+2026-06-20 11:38:53.596 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 7/11
+2026-06-20 11:38:53.654 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 8/11
+2026-06-20 11:38:53.726 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 9/11
+2026-06-20 11:38:53.786 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 10/11
+2026-06-20 11:38:53.829 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 11/11
+2026-06-20 11:38:53.830 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 11:38:53.830 [main] INFO  com.optical.receiver.service.ReceptionService - All 11 chunks received! Ready for assembly.
+2026-06-20 11:38:53.869 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer END packet received. Chunks: 11/11
+2026-06-20 11:38:53.869 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 11:38:53.875 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 11 chunks, expected file: bigger_song.mp3
+2026-06-20 11:38:53.875 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 11 chunks...
+2026-06-20 11:38:53.875 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 10023 bytes
+2026-06-20 11:38:53.875 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 11:38:53.875 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 10023 bytes → 10000 bytes
+2026-06-20 11:38:53.875 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: 712fc649b65a0dbb3693c09e07df8fae43399119a6782e55a9b8995846f09f24, actual: 712fc649b65a0dbb3693c09e07df8fae43399119a6782e55a9b8995846f09f24
+2026-06-20 11:38:53.875 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 11:38:53.875 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit14003152590985814900\output2\bigger_song.mp3 (10000 bytes)
+2026-06-20 11:38:53.905 [main] INFO  com.optical.sender.service.TransferService - Preparing transfer for file: test_song.mp3
+2026-06-20 11:38:53.905 [main] INFO  com.optical.sender.service.TransferService - Read 60 bytes from test_song.mp3
+2026-06-20 11:38:53.906 [main] INFO  com.optical.sender.service.TransferService - SHA-256 hash: 10d598cb22bd5c1e13784f6dd198364bac130dc423c63887e68568897124e0bc
+2026-06-20 11:38:53.906 [main] INFO  com.optical.sender.service.TransferService - Compressed: 60 bytes → 77 bytes (ratio: 128.3%)
+2026-06-20 11:38:53.906 [main] INFO  com.optical.sender.service.TransferService - Transfer ID: 4de51132-ad8c-478c-970b-ecdcfd1a92d5
+2026-06-20 11:38:53.906 [main] INFO  com.optical.sender.chunk.FileChunker - Splitting 77 bytes into 1 chunks of max 1000 bytes each
+2026-06-20 11:38:53.906 [main] INFO  com.optical.sender.chunk.FileChunker - Created 1 chunk packets for transfer 4de51132-ad8c-478c-970b-ecdcfd1a92d5
+2026-06-20 11:38:53.907 [main] INFO  com.optical.sender.service.TransferService - Transfer prepared: 3 total packets (1 header + 1 chunks + 1 end)
+2026-06-20 11:38:53.919 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 11:38:53.919 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: 4de51132-ad8c-478c-970b-ecdcfd1a92d5, File: test_song.mp3, Size: 60, Chunks: 1
+2026-06-20 11:38:53.935 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/1
+2026-06-20 11:38:53.935 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 11:38:53.935 [main] INFO  com.optical.receiver.service.ReceptionService - All 1 chunks received! Ready for assembly.
+2026-06-20 11:38:53.935 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer END packet received. Chunks: 1/1
+2026-06-20 11:38:53.935 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 11:38:53.935 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 1 chunks, expected file: test_song.mp3
+2026-06-20 11:38:53.935 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 1 chunks...
+2026-06-20 11:38:53.935 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 77 bytes
+2026-06-20 11:38:53.935 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 11:38:53.951 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 77 bytes → 60 bytes
+2026-06-20 11:38:53.951 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: 10d598cb22bd5c1e13784f6dd198364bac130dc423c63887e68568897124e0bc, actual: 10d598cb22bd5c1e13784f6dd198364bac130dc423c63887e68568897124e0bc
+2026-06-20 11:38:53.952 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 11:38:53.954 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit8756047860642705950\output\test_song.mp3 (60 bytes)
+2026-06-20 11:38:53.962 [main] INFO  com.optical.sender.service.TransferService - Preparing transfer for file: retrans.mp3
+2026-06-20 11:38:53.963 [main] INFO  com.optical.sender.service.TransferService - Read 40 bytes from retrans.mp3
+2026-06-20 11:38:53.963 [main] INFO  com.optical.sender.service.TransferService - SHA-256 hash: bae2fead0c67e905d5299c7c51d9c16a8df180e4cba1add9b1e384dbe17655dc
+2026-06-20 11:38:53.963 [main] INFO  com.optical.sender.service.TransferService - Compressed: 40 bytes → 57 bytes (ratio: 142.5%)
+2026-06-20 11:38:53.963 [main] INFO  com.optical.sender.service.TransferService - Transfer ID: 463e2014-4c93-490d-91bb-a213e662b403
+2026-06-20 11:38:53.963 [main] INFO  com.optical.sender.chunk.FileChunker - Splitting 57 bytes into 1 chunks of max 1000 bytes each
+2026-06-20 11:38:53.963 [main] INFO  com.optical.sender.chunk.FileChunker - Created 1 chunk packets for transfer 463e2014-4c93-490d-91bb-a213e662b403
+2026-06-20 11:38:53.964 [main] INFO  com.optical.sender.service.TransferService - Transfer prepared: 3 total packets (1 header + 1 chunks + 1 end)
+2026-06-20 11:38:53.976 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 11:38:53.976 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: 463e2014-4c93-490d-91bb-a213e662b403, File: retrans.mp3, Size: 40, Chunks: 1
+2026-06-20 11:38:53.990 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer END packet received. Chunks: 0/1
+2026-06-20 11:38:54.016 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/1
+2026-06-20 11:38:54.017 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 11:38:54.017 [main] INFO  com.optical.receiver.service.ReceptionService - All 1 chunks received! Ready for assembly.
+2026-06-20 11:38:54.026 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer END packet received. Chunks: 1/1
+2026-06-20 11:38:54.026 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 11:38:54.026 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 1 chunks, expected file: retrans.mp3
+2026-06-20 11:38:54.026 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 1 chunks...
+2026-06-20 11:38:54.026 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 57 bytes
+2026-06-20 11:38:54.026 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 11:38:54.026 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 57 bytes → 40 bytes
+2026-06-20 11:38:54.026 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: bae2fead0c67e905d5299c7c51d9c16a8df180e4cba1add9b1e384dbe17655dc, actual: bae2fead0c67e905d5299c7c51d9c16a8df180e4cba1add9b1e384dbe17655dc
+2026-06-20 11:38:54.026 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 11:38:54.026 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit18092549972499465007\output3\retrans.mp3 (40 bytes)
+2026-06-20 11:38:54.046 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 1 chunks, expected file: dup.mp3
+2026-06-20 11:38:54.048 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 1 chunks...
+2026-06-20 11:38:54.048 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 24 bytes
+2026-06-20 11:38:54.048 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 11:38:54.048 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 24 bytes → 4 bytes
+2026-06-20 11:38:54.048 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08, actual: 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
+2026-06-20 11:38:54.048 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 11:38:54.051 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit13235708371404600685\dup.mp3 (4 bytes)
+2026-06-20 11:38:54.051 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 1 chunks, expected file: dup.mp3
+2026-06-20 11:38:54.051 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 1 chunks...
+2026-06-20 11:38:54.051 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 24 bytes
+2026-06-20 11:38:54.051 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 11:38:54.052 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 24 bytes → 4 bytes
+2026-06-20 11:38:54.052 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08, actual: 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
+2026-06-20 11:38:54.052 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 11:38:54.060 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit13235708371404600685\dup_1.mp3 (4 bytes)
+2026-06-20 11:38:54.070 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 51 chunks, expected file: large.mp3
+2026-06-20 11:38:54.071 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 51 chunks...
+2026-06-20 11:38:54.071 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 50038 bytes
+2026-06-20 11:38:54.071 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 11:38:54.071 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 50038 bytes → 50000 bytes
+2026-06-20 11:38:54.072 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: 0c9979bee37368a3c2d18779916129d5954369b238dc5c0aabe5b9303f71fb37, actual: 0c9979bee37368a3c2d18779916129d5954369b238dc5c0aabe5b9303f71fb37
+2026-06-20 11:38:54.073 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 11:38:54.074 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit11471328355587817712\large.mp3 (50000 bytes)
+2026-06-20 11:38:54.080 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 5 chunks, expected file: test.mp3
+2026-06-20 11:38:54.081 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 5 chunks...
+2026-06-20 11:38:54.081 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 50 bytes
+2026-06-20 11:38:54.081 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 11:38:54.081 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 50 bytes → 32 bytes
+2026-06-20 11:38:54.082 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: f865ddfdc2970faed8a666a20db9df0ff2bc75e1b9e0f8868900b9ebe9d6b84a, actual: f865ddfdc2970faed8a666a20db9df0ff2bc75e1b9e0f8868900b9ebe9d6b84a
+2026-06-20 11:38:54.082 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 11:38:54.083 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit8714035730884860095\test.mp3 (32 bytes)
+2026-06-20 11:38:54.090 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 2 chunks, expected file: test.mp3
+2026-06-20 11:38:54.097 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 1 chunks, expected file: test.mp3
+2026-06-20 11:38:54.097 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 1 chunks...
+2026-06-20 11:38:54.097 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 29 bytes
+2026-06-20 11:38:54.098 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 11:38:54.098 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 29 bytes → 9 bytes
+2026-06-20 11:38:54.098 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: wrong_hash_value, actual: 916f0027a575074ce72a331777c3478d6513f786a591bd892da1a577bf2335f9
+2026-06-20 11:38:54.216 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 11:38:54.216 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 1000, Chunks: 5
+2026-06-20 11:38:54.216 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer END packet received. Chunks: 0/5
+2026-06-20 11:38:54.221 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 11:38:54.223 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: song.mp3, Size: 5000, Chunks: 5
+2026-06-20 11:38:54.226 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 11:38:54.226 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 3000, Chunks: 3
+2026-06-20 11:38:54.227 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/3
+2026-06-20 11:38:54.232 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 11:38:54.232 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 1000, Chunks: 1
+2026-06-20 11:38:54.234 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 11:38:54.234 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 1000, Chunks: 3
+2026-06-20 11:38:54.236 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/3
+2026-06-20 11:38:54.244 [main] WARN  com.optical.shared.protocol.PacketSerializer - Failed to detect packet type from JSON: not valid json at all
+com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'not': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2572)
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2598)
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2606)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:765)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:3018)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2996)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._matchToken(ReaderBasedJsonParser.java:2761)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._matchNull(ReaderBasedJsonParser.java:2747)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:750)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4934)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3280)
+	at com.optical.shared.protocol.PacketSerializer.detectPacketType(PacketSerializer.java:83)
+	at com.optical.receiver.service.ReceptionService.processPacket(ReceptionService.java:67)
+	at com.optical.receiver.service.ReceptionServiceTest.processPacket_invalidJson_ignored(ReceptionServiceTest.java:155)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2026-06-20 11:38:54.247 [main] DEBUG com.optical.receiver.service.ReceptionService - Ignoring unknown packet type
+2026-06-20 11:38:54.255 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 11:38:54.256 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 200, Chunks: 2
+2026-06-20 11:38:54.256 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/2
+2026-06-20 11:38:54.258 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 2/2
+2026-06-20 11:38:54.258 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 11:38:54.258 [main] INFO  com.optical.receiver.service.ReceptionService - All 2 chunks received! Ready for assembly.
+2026-06-20 11:38:54.262 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 11:38:54.262 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 1000, Chunks: 2
+2026-06-20 11:38:54.263 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/2
+2026-06-20 11:38:54.263 [main] INFO  com.optical.receiver.service.ReceptionService - Reception service reset
+2026-06-20 11:38:54.273 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 11:38:54.273 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 1000, Chunks: 1
+2026-06-20 11:38:54.274 [main] DEBUG com.optical.receiver.service.ReceptionService - Ignoring chunk with mismatched transferId: wrong-id
+2026-06-20 12:08:01.163 [main] INFO  com.optical.sender.service.TransferService - Preparing transfer for file: bigger_song.mp3
+2026-06-20 12:08:01.166 [main] INFO  com.optical.sender.service.TransferService - Read 10000 bytes from bigger_song.mp3
+2026-06-20 12:08:01.170 [main] INFO  com.optical.sender.service.TransferService - SHA-256 hash: 712fc649b65a0dbb3693c09e07df8fae43399119a6782e55a9b8995846f09f24
+2026-06-20 12:08:01.173 [main] INFO  com.optical.sender.service.TransferService - Compressed: 10000 bytes → 10023 bytes (ratio: 100.2%)
+2026-06-20 12:08:01.174 [main] INFO  com.optical.sender.service.TransferService - Transfer ID: b926aec5-8092-4b02-8de2-f433521c63b9
+2026-06-20 12:08:01.175 [main] INFO  com.optical.sender.chunk.FileChunker - Splitting 10023 bytes into 11 chunks of max 1000 bytes each
+2026-06-20 12:08:01.176 [main] INFO  com.optical.sender.chunk.FileChunker - Created 11 chunk packets for transfer b926aec5-8092-4b02-8de2-f433521c63b9
+2026-06-20 12:08:01.323 [main] INFO  com.optical.sender.service.TransferService - Transfer prepared: 13 total packets (1 header + 11 chunks + 1 end)
+2026-06-20 12:08:01.581 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:08:01.581 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: b926aec5-8092-4b02-8de2-f433521c63b9, File: bigger_song.mp3, Size: 10000, Chunks: 11
+2026-06-20 12:08:01.682 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/11
+2026-06-20 12:08:01.741 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 2/11
+2026-06-20 12:08:01.790 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 3/11
+2026-06-20 12:08:01.835 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 4/11
+2026-06-20 12:08:01.885 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 5/11
+2026-06-20 12:08:01.930 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 6/11
+2026-06-20 12:08:01.972 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 7/11
+2026-06-20 12:08:02.014 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 8/11
+2026-06-20 12:08:02.053 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 9/11
+2026-06-20 12:08:02.127 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 10/11
+2026-06-20 12:08:02.160 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 11/11
+2026-06-20 12:08:02.160 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 12:08:02.161 [main] INFO  com.optical.receiver.service.ReceptionService - All 11 chunks received! Ready for assembly.
+2026-06-20 12:08:02.195 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer END packet received. Chunks: 11/11
+2026-06-20 12:08:02.195 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 12:08:02.199 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 11 chunks, expected file: bigger_song.mp3
+2026-06-20 12:08:02.200 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 11 chunks...
+2026-06-20 12:08:02.200 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 10023 bytes
+2026-06-20 12:08:02.200 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 12:08:02.201 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 10023 bytes → 10000 bytes
+2026-06-20 12:08:02.202 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: 712fc649b65a0dbb3693c09e07df8fae43399119a6782e55a9b8995846f09f24, actual: 712fc649b65a0dbb3693c09e07df8fae43399119a6782e55a9b8995846f09f24
+2026-06-20 12:08:02.202 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 12:08:02.204 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit812450239950888968\output2\bigger_song.mp3 (10000 bytes)
+2026-06-20 12:08:02.224 [main] INFO  com.optical.sender.service.TransferService - Preparing transfer for file: test_song.mp3
+2026-06-20 12:08:02.225 [main] INFO  com.optical.sender.service.TransferService - Read 60 bytes from test_song.mp3
+2026-06-20 12:08:02.225 [main] INFO  com.optical.sender.service.TransferService - SHA-256 hash: 10d598cb22bd5c1e13784f6dd198364bac130dc423c63887e68568897124e0bc
+2026-06-20 12:08:02.225 [main] INFO  com.optical.sender.service.TransferService - Compressed: 60 bytes → 77 bytes (ratio: 128.3%)
+2026-06-20 12:08:02.225 [main] INFO  com.optical.sender.service.TransferService - Transfer ID: 2b194d5f-3470-4cfb-a4fc-3f7f60ed78b8
+2026-06-20 12:08:02.225 [main] INFO  com.optical.sender.chunk.FileChunker - Splitting 77 bytes into 1 chunks of max 1000 bytes each
+2026-06-20 12:08:02.225 [main] INFO  com.optical.sender.chunk.FileChunker - Created 1 chunk packets for transfer 2b194d5f-3470-4cfb-a4fc-3f7f60ed78b8
+2026-06-20 12:08:02.226 [main] INFO  com.optical.sender.service.TransferService - Transfer prepared: 3 total packets (1 header + 1 chunks + 1 end)
+2026-06-20 12:08:02.238 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:08:02.238 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: 2b194d5f-3470-4cfb-a4fc-3f7f60ed78b8, File: test_song.mp3, Size: 60, Chunks: 1
+2026-06-20 12:08:02.250 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/1
+2026-06-20 12:08:02.251 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 12:08:02.251 [main] INFO  com.optical.receiver.service.ReceptionService - All 1 chunks received! Ready for assembly.
+2026-06-20 12:08:02.261 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer END packet received. Chunks: 1/1
+2026-06-20 12:08:02.261 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 12:08:02.261 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 1 chunks, expected file: test_song.mp3
+2026-06-20 12:08:02.261 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 1 chunks...
+2026-06-20 12:08:02.262 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 77 bytes
+2026-06-20 12:08:02.262 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 12:08:02.262 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 77 bytes → 60 bytes
+2026-06-20 12:08:02.262 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: 10d598cb22bd5c1e13784f6dd198364bac130dc423c63887e68568897124e0bc, actual: 10d598cb22bd5c1e13784f6dd198364bac130dc423c63887e68568897124e0bc
+2026-06-20 12:08:02.262 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 12:08:02.263 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit4661676213458163596\output\test_song.mp3 (60 bytes)
+2026-06-20 12:08:02.269 [main] INFO  com.optical.sender.service.TransferService - Preparing transfer for file: retrans.mp3
+2026-06-20 12:08:02.269 [main] INFO  com.optical.sender.service.TransferService - Read 40 bytes from retrans.mp3
+2026-06-20 12:08:02.269 [main] INFO  com.optical.sender.service.TransferService - SHA-256 hash: bae2fead0c67e905d5299c7c51d9c16a8df180e4cba1add9b1e384dbe17655dc
+2026-06-20 12:08:02.270 [main] INFO  com.optical.sender.service.TransferService - Compressed: 40 bytes → 57 bytes (ratio: 142.5%)
+2026-06-20 12:08:02.270 [main] INFO  com.optical.sender.service.TransferService - Transfer ID: 36e90610-44ea-4daa-a0f7-7f3c403f9e3b
+2026-06-20 12:08:02.270 [main] INFO  com.optical.sender.chunk.FileChunker - Splitting 57 bytes into 1 chunks of max 1000 bytes each
+2026-06-20 12:08:02.270 [main] INFO  com.optical.sender.chunk.FileChunker - Created 1 chunk packets for transfer 36e90610-44ea-4daa-a0f7-7f3c403f9e3b
+2026-06-20 12:08:02.270 [main] INFO  com.optical.sender.service.TransferService - Transfer prepared: 3 total packets (1 header + 1 chunks + 1 end)
+2026-06-20 12:08:02.282 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:08:02.283 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: 36e90610-44ea-4daa-a0f7-7f3c403f9e3b, File: retrans.mp3, Size: 40, Chunks: 1
+2026-06-20 12:08:02.295 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer END packet received. Chunks: 0/1
+2026-06-20 12:08:02.336 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer END packet received. Chunks: 0/1
+2026-06-20 12:08:02.358 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 1 chunks, expected file: dup.mp3
+2026-06-20 12:08:02.358 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 1 chunks...
+2026-06-20 12:08:02.358 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 24 bytes
+2026-06-20 12:08:02.358 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 12:08:02.359 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 24 bytes → 4 bytes
+2026-06-20 12:08:02.359 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08, actual: 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
+2026-06-20 12:08:02.359 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 12:08:02.361 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit3811118954315737207\dup.mp3 (4 bytes)
+2026-06-20 12:08:02.362 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 1 chunks, expected file: dup.mp3
+2026-06-20 12:08:02.362 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 1 chunks...
+2026-06-20 12:08:02.362 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 24 bytes
+2026-06-20 12:08:02.362 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 12:08:02.362 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 24 bytes → 4 bytes
+2026-06-20 12:08:02.363 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08, actual: 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
+2026-06-20 12:08:02.363 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 12:08:02.369 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit3811118954315737207\dup_1.mp3 (4 bytes)
+2026-06-20 12:08:02.379 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 51 chunks, expected file: large.mp3
+2026-06-20 12:08:02.380 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 51 chunks...
+2026-06-20 12:08:02.380 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 50038 bytes
+2026-06-20 12:08:02.380 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 12:08:02.381 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 50038 bytes → 50000 bytes
+2026-06-20 12:08:02.383 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: 0c9979bee37368a3c2d18779916129d5954369b238dc5c0aabe5b9303f71fb37, actual: 0c9979bee37368a3c2d18779916129d5954369b238dc5c0aabe5b9303f71fb37
+2026-06-20 12:08:02.383 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 12:08:02.385 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit17346292083626222966\large.mp3 (50000 bytes)
+2026-06-20 12:08:02.392 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 5 chunks, expected file: test.mp3
+2026-06-20 12:08:02.392 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 5 chunks...
+2026-06-20 12:08:02.393 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 50 bytes
+2026-06-20 12:08:02.393 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 12:08:02.393 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 50 bytes → 32 bytes
+2026-06-20 12:08:02.393 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: f865ddfdc2970faed8a666a20db9df0ff2bc75e1b9e0f8868900b9ebe9d6b84a, actual: f865ddfdc2970faed8a666a20db9df0ff2bc75e1b9e0f8868900b9ebe9d6b84a
+2026-06-20 12:08:02.393 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 12:08:02.411 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit918334138613225451\test.mp3 (32 bytes)
+2026-06-20 12:08:02.417 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 2 chunks, expected file: test.mp3
+2026-06-20 12:08:02.429 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 1 chunks, expected file: test.mp3
+2026-06-20 12:08:02.429 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 1 chunks...
+2026-06-20 12:08:02.429 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 29 bytes
+2026-06-20 12:08:02.429 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 12:08:02.429 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 29 bytes → 9 bytes
+2026-06-20 12:08:02.429 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: wrong_hash_value, actual: 916f0027a575074ce72a331777c3478d6513f786a591bd892da1a577bf2335f9
+2026-06-20 12:08:02.513 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:08:02.513 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 1000, Chunks: 5
+2026-06-20 12:08:02.513 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer END packet received. Chunks: 0/5
+2026-06-20 12:08:02.516 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:08:02.516 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: song.mp3, Size: 5000, Chunks: 5
+2026-06-20 12:08:02.518 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:08:02.519 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 3000, Chunks: 3
+2026-06-20 12:08:02.519 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/3
+2026-06-20 12:08:02.522 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:08:02.522 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 1000, Chunks: 1
+2026-06-20 12:08:02.525 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:08:02.525 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 1000, Chunks: 3
+2026-06-20 12:08:02.526 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/3
+2026-06-20 12:08:02.530 [main] WARN  com.optical.shared.protocol.PacketSerializer - Failed to detect packet type from JSON: not valid json at all
+com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'not': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2572)
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2598)
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2606)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:765)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:3018)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2996)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._matchToken(ReaderBasedJsonParser.java:2761)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._matchNull(ReaderBasedJsonParser.java:2747)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:750)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4934)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3280)
+	at com.optical.shared.protocol.PacketSerializer.detectPacketType(PacketSerializer.java:83)
+	at com.optical.receiver.service.ReceptionService.processPacket(ReceptionService.java:67)
+	at com.optical.receiver.service.ReceptionServiceTest.processPacket_invalidJson_ignored(ReceptionServiceTest.java:155)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2026-06-20 12:08:02.534 [main] DEBUG com.optical.receiver.service.ReceptionService - Ignoring unknown packet type
+2026-06-20 12:08:02.536 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:08:02.536 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 200, Chunks: 2
+2026-06-20 12:08:02.544 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/2
+2026-06-20 12:08:02.545 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 2/2
+2026-06-20 12:08:02.545 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 12:08:02.545 [main] INFO  com.optical.receiver.service.ReceptionService - All 2 chunks received! Ready for assembly.
+2026-06-20 12:08:02.550 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:08:02.550 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 1000, Chunks: 2
+2026-06-20 12:08:02.551 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/2
+2026-06-20 12:08:02.551 [main] INFO  com.optical.receiver.service.ReceptionService - Reception service reset
+2026-06-20 12:08:02.557 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:08:02.557 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 1000, Chunks: 1
+2026-06-20 12:08:02.558 [main] DEBUG com.optical.receiver.service.ReceptionService - Ignoring chunk with mismatched transferId: wrong-id
+2026-06-20 12:09:13.458 [main] INFO  com.optical.sender.service.TransferService - Preparing transfer for file: bigger_song.mp3
+2026-06-20 12:09:13.461 [main] INFO  com.optical.sender.service.TransferService - Read 10000 bytes from bigger_song.mp3
+2026-06-20 12:09:13.464 [main] INFO  com.optical.sender.service.TransferService - SHA-256 hash: 712fc649b65a0dbb3693c09e07df8fae43399119a6782e55a9b8995846f09f24
+2026-06-20 12:09:13.466 [main] INFO  com.optical.sender.service.TransferService - Compressed: 10000 bytes → 10023 bytes (ratio: 100.2%)
+2026-06-20 12:09:13.468 [main] INFO  com.optical.sender.service.TransferService - Transfer ID: 9dfced8b-e62c-4baf-94db-bc66bddd5de1
+2026-06-20 12:09:13.469 [main] INFO  com.optical.sender.chunk.FileChunker - Splitting 10023 bytes into 11 chunks of max 1000 bytes each
+2026-06-20 12:09:13.469 [main] INFO  com.optical.sender.chunk.FileChunker - Created 11 chunk packets for transfer 9dfced8b-e62c-4baf-94db-bc66bddd5de1
+2026-06-20 12:09:13.617 [main] INFO  com.optical.sender.service.TransferService - Transfer prepared: 13 total packets (1 header + 11 chunks + 1 end)
+2026-06-20 12:09:13.864 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:09:13.865 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: 9dfced8b-e62c-4baf-94db-bc66bddd5de1, File: bigger_song.mp3, Size: 10000, Chunks: 11
+2026-06-20 12:09:13.970 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/11
+2026-06-20 12:09:14.035 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 2/11
+2026-06-20 12:09:14.088 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 3/11
+2026-06-20 12:09:14.137 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 4/11
+2026-06-20 12:09:14.184 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 5/11
+2026-06-20 12:09:14.230 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 6/11
+2026-06-20 12:09:14.275 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 7/11
+2026-06-20 12:09:14.320 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 8/11
+2026-06-20 12:09:14.366 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 9/11
+2026-06-20 12:09:14.408 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 10/11
+2026-06-20 12:09:14.445 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 11/11
+2026-06-20 12:09:14.445 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 12:09:14.445 [main] INFO  com.optical.receiver.service.ReceptionService - All 11 chunks received! Ready for assembly.
+2026-06-20 12:09:14.479 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer END packet received. Chunks: 11/11
+2026-06-20 12:09:14.479 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 12:09:14.482 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 11 chunks, expected file: bigger_song.mp3
+2026-06-20 12:09:14.483 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 11 chunks...
+2026-06-20 12:09:14.483 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 10023 bytes
+2026-06-20 12:09:14.483 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 12:09:14.484 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 10023 bytes → 10000 bytes
+2026-06-20 12:09:14.484 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: 712fc649b65a0dbb3693c09e07df8fae43399119a6782e55a9b8995846f09f24, actual: 712fc649b65a0dbb3693c09e07df8fae43399119a6782e55a9b8995846f09f24
+2026-06-20 12:09:14.485 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 12:09:14.487 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit1774554931360174518\output2\bigger_song.mp3 (10000 bytes)
+2026-06-20 12:09:14.504 [main] INFO  com.optical.sender.service.TransferService - Preparing transfer for file: test_song.mp3
+2026-06-20 12:09:14.504 [main] INFO  com.optical.sender.service.TransferService - Read 60 bytes from test_song.mp3
+2026-06-20 12:09:14.505 [main] INFO  com.optical.sender.service.TransferService - SHA-256 hash: 10d598cb22bd5c1e13784f6dd198364bac130dc423c63887e68568897124e0bc
+2026-06-20 12:09:14.505 [main] INFO  com.optical.sender.service.TransferService - Compressed: 60 bytes → 77 bytes (ratio: 128.3%)
+2026-06-20 12:09:14.505 [main] INFO  com.optical.sender.service.TransferService - Transfer ID: 585e6a38-a54b-45b2-a5bd-57831cced892
+2026-06-20 12:09:14.505 [main] INFO  com.optical.sender.chunk.FileChunker - Splitting 77 bytes into 1 chunks of max 1000 bytes each
+2026-06-20 12:09:14.505 [main] INFO  com.optical.sender.chunk.FileChunker - Created 1 chunk packets for transfer 585e6a38-a54b-45b2-a5bd-57831cced892
+2026-06-20 12:09:14.506 [main] INFO  com.optical.sender.service.TransferService - Transfer prepared: 3 total packets (1 header + 1 chunks + 1 end)
+2026-06-20 12:09:14.517 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:09:14.518 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: 585e6a38-a54b-45b2-a5bd-57831cced892, File: test_song.mp3, Size: 60, Chunks: 1
+2026-06-20 12:09:14.530 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/1
+2026-06-20 12:09:14.530 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 12:09:14.530 [main] INFO  com.optical.receiver.service.ReceptionService - All 1 chunks received! Ready for assembly.
+2026-06-20 12:09:14.541 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer END packet received. Chunks: 1/1
+2026-06-20 12:09:14.541 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 12:09:14.542 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 1 chunks, expected file: test_song.mp3
+2026-06-20 12:09:14.542 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 1 chunks...
+2026-06-20 12:09:14.542 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 77 bytes
+2026-06-20 12:09:14.542 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 12:09:14.542 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 77 bytes → 60 bytes
+2026-06-20 12:09:14.542 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: 10d598cb22bd5c1e13784f6dd198364bac130dc423c63887e68568897124e0bc, actual: 10d598cb22bd5c1e13784f6dd198364bac130dc423c63887e68568897124e0bc
+2026-06-20 12:09:14.542 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 12:09:14.544 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit11170387372387948725\output\test_song.mp3 (60 bytes)
+2026-06-20 12:09:14.551 [main] INFO  com.optical.sender.service.TransferService - Preparing transfer for file: retrans.mp3
+2026-06-20 12:09:14.552 [main] INFO  com.optical.sender.service.TransferService - Read 40 bytes from retrans.mp3
+2026-06-20 12:09:14.552 [main] INFO  com.optical.sender.service.TransferService - SHA-256 hash: bae2fead0c67e905d5299c7c51d9c16a8df180e4cba1add9b1e384dbe17655dc
+2026-06-20 12:09:14.553 [main] INFO  com.optical.sender.service.TransferService - Compressed: 40 bytes → 57 bytes (ratio: 142.5%)
+2026-06-20 12:09:14.553 [main] INFO  com.optical.sender.service.TransferService - Transfer ID: d9852cfc-bcc2-42ea-9107-230e25304b00
+2026-06-20 12:09:14.553 [main] INFO  com.optical.sender.chunk.FileChunker - Splitting 57 bytes into 1 chunks of max 1000 bytes each
+2026-06-20 12:09:14.553 [main] INFO  com.optical.sender.chunk.FileChunker - Created 1 chunk packets for transfer d9852cfc-bcc2-42ea-9107-230e25304b00
+2026-06-20 12:09:14.554 [main] INFO  com.optical.sender.service.TransferService - Transfer prepared: 3 total packets (1 header + 1 chunks + 1 end)
+2026-06-20 12:09:14.567 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:09:14.567 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: d9852cfc-bcc2-42ea-9107-230e25304b00, File: retrans.mp3, Size: 40, Chunks: 1
+2026-06-20 12:09:14.578 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer END packet received. Chunks: 0/1
+2026-06-20 12:09:14.603 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/1
+2026-06-20 12:09:14.603 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 12:09:14.603 [main] INFO  com.optical.receiver.service.ReceptionService - All 1 chunks received! Ready for assembly.
+2026-06-20 12:09:14.615 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer END packet received. Chunks: 1/1
+2026-06-20 12:09:14.615 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 12:09:14.615 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 1 chunks, expected file: retrans.mp3
+2026-06-20 12:09:14.615 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 1 chunks...
+2026-06-20 12:09:14.615 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 57 bytes
+2026-06-20 12:09:14.615 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 12:09:14.615 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 57 bytes → 40 bytes
+2026-06-20 12:09:14.615 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: bae2fead0c67e905d5299c7c51d9c16a8df180e4cba1add9b1e384dbe17655dc, actual: bae2fead0c67e905d5299c7c51d9c16a8df180e4cba1add9b1e384dbe17655dc
+2026-06-20 12:09:14.616 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 12:09:14.618 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit12844474538782912405\output3\retrans.mp3 (40 bytes)
+2026-06-20 12:09:14.633 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 1 chunks, expected file: dup.mp3
+2026-06-20 12:09:14.633 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 1 chunks...
+2026-06-20 12:09:14.633 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 24 bytes
+2026-06-20 12:09:14.634 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 12:09:14.634 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 24 bytes → 4 bytes
+2026-06-20 12:09:14.635 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08, actual: 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
+2026-06-20 12:09:14.635 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 12:09:14.637 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit8260531578129632923\dup.mp3 (4 bytes)
+2026-06-20 12:09:14.637 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 1 chunks, expected file: dup.mp3
+2026-06-20 12:09:14.637 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 1 chunks...
+2026-06-20 12:09:14.637 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 24 bytes
+2026-06-20 12:09:14.637 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 12:09:14.637 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 24 bytes → 4 bytes
+2026-06-20 12:09:14.638 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08, actual: 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
+2026-06-20 12:09:14.638 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 12:09:14.643 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit8260531578129632923\dup_1.mp3 (4 bytes)
+2026-06-20 12:09:14.655 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 51 chunks, expected file: large.mp3
+2026-06-20 12:09:14.655 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 51 chunks...
+2026-06-20 12:09:14.655 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 50038 bytes
+2026-06-20 12:09:14.655 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 12:09:14.655 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 50038 bytes → 50000 bytes
+2026-06-20 12:09:14.657 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: 0c9979bee37368a3c2d18779916129d5954369b238dc5c0aabe5b9303f71fb37, actual: 0c9979bee37368a3c2d18779916129d5954369b238dc5c0aabe5b9303f71fb37
+2026-06-20 12:09:14.657 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 12:09:14.659 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit9239928709582364426\large.mp3 (50000 bytes)
+2026-06-20 12:09:14.666 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 5 chunks, expected file: test.mp3
+2026-06-20 12:09:14.666 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 5 chunks...
+2026-06-20 12:09:14.666 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 50 bytes
+2026-06-20 12:09:14.666 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 12:09:14.666 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 50 bytes → 32 bytes
+2026-06-20 12:09:14.666 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: f865ddfdc2970faed8a666a20db9df0ff2bc75e1b9e0f8868900b9ebe9d6b84a, actual: f865ddfdc2970faed8a666a20db9df0ff2bc75e1b9e0f8868900b9ebe9d6b84a
+2026-06-20 12:09:14.666 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 12:09:14.667 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit1606789655320528966\test.mp3 (32 bytes)
+2026-06-20 12:09:14.673 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 2 chunks, expected file: test.mp3
+2026-06-20 12:09:14.681 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 1 chunks, expected file: test.mp3
+2026-06-20 12:09:14.682 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 1 chunks...
+2026-06-20 12:09:14.682 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 29 bytes
+2026-06-20 12:09:14.682 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 12:09:14.682 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 29 bytes → 9 bytes
+2026-06-20 12:09:14.682 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: wrong_hash_value, actual: 916f0027a575074ce72a331777c3478d6513f786a591bd892da1a577bf2335f9
+2026-06-20 12:09:14.788 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:09:14.788 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 1000, Chunks: 5
+2026-06-20 12:09:14.789 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer END packet received. Chunks: 0/5
+2026-06-20 12:09:14.792 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:09:14.793 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: song.mp3, Size: 5000, Chunks: 5
+2026-06-20 12:09:14.797 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:09:14.797 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 3000, Chunks: 3
+2026-06-20 12:09:14.798 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/3
+2026-06-20 12:09:14.801 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:09:14.802 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 1000, Chunks: 1
+2026-06-20 12:09:14.804 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:09:14.805 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 1000, Chunks: 3
+2026-06-20 12:09:14.805 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/3
+2026-06-20 12:09:14.809 [main] WARN  com.optical.shared.protocol.PacketSerializer - Failed to detect packet type from JSON: not valid json at all
+com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'not': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2572)
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2598)
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2606)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:765)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:3018)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2996)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._matchToken(ReaderBasedJsonParser.java:2761)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._matchNull(ReaderBasedJsonParser.java:2747)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:750)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4934)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3280)
+	at com.optical.shared.protocol.PacketSerializer.detectPacketType(PacketSerializer.java:83)
+	at com.optical.receiver.service.ReceptionService.processPacket(ReceptionService.java:67)
+	at com.optical.receiver.service.ReceptionServiceTest.processPacket_invalidJson_ignored(ReceptionServiceTest.java:155)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2026-06-20 12:09:14.813 [main] DEBUG com.optical.receiver.service.ReceptionService - Ignoring unknown packet type
+2026-06-20 12:09:14.816 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:09:14.817 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 200, Chunks: 2
+2026-06-20 12:09:14.818 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/2
+2026-06-20 12:09:14.820 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 2/2
+2026-06-20 12:09:14.821 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 12:09:14.821 [main] INFO  com.optical.receiver.service.ReceptionService - All 2 chunks received! Ready for assembly.
+2026-06-20 12:09:14.826 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:09:14.826 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 1000, Chunks: 2
+2026-06-20 12:09:14.826 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/2
+2026-06-20 12:09:14.827 [main] INFO  com.optical.receiver.service.ReceptionService - Reception service reset
+2026-06-20 12:09:14.833 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:09:14.833 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 1000, Chunks: 1
+2026-06-20 12:09:14.834 [main] DEBUG com.optical.receiver.service.ReceptionService - Ignoring chunk with mismatched transferId: wrong-id
+2026-06-20 12:10:00.851 [main] INFO  com.optical.sender.service.TransferService - Preparing transfer for file: bigger_song.mp3
+2026-06-20 12:10:00.853 [main] INFO  com.optical.sender.service.TransferService - Read 10000 bytes from bigger_song.mp3
+2026-06-20 12:10:00.856 [main] INFO  com.optical.sender.service.TransferService - SHA-256 hash: 712fc649b65a0dbb3693c09e07df8fae43399119a6782e55a9b8995846f09f24
+2026-06-20 12:10:00.858 [main] INFO  com.optical.sender.service.TransferService - Compressed: 10000 bytes → 10023 bytes (ratio: 100.2%)
+2026-06-20 12:10:00.859 [main] INFO  com.optical.sender.service.TransferService - Transfer ID: b83e0315-59e0-432f-9b11-a5752a197aab
+2026-06-20 12:10:00.860 [main] INFO  com.optical.sender.chunk.FileChunker - Splitting 10023 bytes into 11 chunks of max 1000 bytes each
+2026-06-20 12:10:00.861 [main] INFO  com.optical.sender.chunk.FileChunker - Created 11 chunk packets for transfer b83e0315-59e0-432f-9b11-a5752a197aab
+2026-06-20 12:10:01.005 [main] INFO  com.optical.sender.service.TransferService - Transfer prepared: 13 total packets (1 header + 11 chunks + 1 end)
+2026-06-20 12:10:01.250 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:10:01.251 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: b83e0315-59e0-432f-9b11-a5752a197aab, File: bigger_song.mp3, Size: 10000, Chunks: 11
+2026-06-20 12:10:01.359 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/11
+2026-06-20 12:10:01.418 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 2/11
+2026-06-20 12:10:01.466 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 3/11
+2026-06-20 12:10:01.516 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 4/11
+2026-06-20 12:10:01.564 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 5/11
+2026-06-20 12:10:01.609 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 6/11
+2026-06-20 12:10:01.650 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 7/11
+2026-06-20 12:10:01.693 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 8/11
+2026-06-20 12:10:01.742 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 9/11
+2026-06-20 12:10:01.784 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 10/11
+2026-06-20 12:10:01.815 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 11/11
+2026-06-20 12:10:01.815 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 12:10:01.816 [main] INFO  com.optical.receiver.service.ReceptionService - All 11 chunks received! Ready for assembly.
+2026-06-20 12:10:01.847 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer END packet received. Chunks: 11/11
+2026-06-20 12:10:01.847 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 12:10:01.851 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 11 chunks, expected file: bigger_song.mp3
+2026-06-20 12:10:01.851 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 11 chunks...
+2026-06-20 12:10:01.852 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 10023 bytes
+2026-06-20 12:10:01.852 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 12:10:01.852 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 10023 bytes → 10000 bytes
+2026-06-20 12:10:01.853 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: 712fc649b65a0dbb3693c09e07df8fae43399119a6782e55a9b8995846f09f24, actual: 712fc649b65a0dbb3693c09e07df8fae43399119a6782e55a9b8995846f09f24
+2026-06-20 12:10:01.853 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 12:10:01.856 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit8798794636737980478\output2\bigger_song.mp3 (10000 bytes)
+2026-06-20 12:10:01.873 [main] INFO  com.optical.sender.service.TransferService - Preparing transfer for file: test_song.mp3
+2026-06-20 12:10:01.873 [main] INFO  com.optical.sender.service.TransferService - Read 60 bytes from test_song.mp3
+2026-06-20 12:10:01.873 [main] INFO  com.optical.sender.service.TransferService - SHA-256 hash: 10d598cb22bd5c1e13784f6dd198364bac130dc423c63887e68568897124e0bc
+2026-06-20 12:10:01.874 [main] INFO  com.optical.sender.service.TransferService - Compressed: 60 bytes → 77 bytes (ratio: 128.3%)
+2026-06-20 12:10:01.874 [main] INFO  com.optical.sender.service.TransferService - Transfer ID: cf7def64-7be0-4793-835d-a136e3139832
+2026-06-20 12:10:01.874 [main] INFO  com.optical.sender.chunk.FileChunker - Splitting 77 bytes into 1 chunks of max 1000 bytes each
+2026-06-20 12:10:01.874 [main] INFO  com.optical.sender.chunk.FileChunker - Created 1 chunk packets for transfer cf7def64-7be0-4793-835d-a136e3139832
+2026-06-20 12:10:01.874 [main] INFO  com.optical.sender.service.TransferService - Transfer prepared: 3 total packets (1 header + 1 chunks + 1 end)
+2026-06-20 12:10:01.886 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:10:01.886 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: cf7def64-7be0-4793-835d-a136e3139832, File: test_song.mp3, Size: 60, Chunks: 1
+2026-06-20 12:10:01.897 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/1
+2026-06-20 12:10:01.898 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 12:10:01.898 [main] INFO  com.optical.receiver.service.ReceptionService - All 1 chunks received! Ready for assembly.
+2026-06-20 12:10:01.911 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer END packet received. Chunks: 1/1
+2026-06-20 12:10:01.911 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 12:10:01.911 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 1 chunks, expected file: test_song.mp3
+2026-06-20 12:10:01.911 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 1 chunks...
+2026-06-20 12:10:01.911 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 77 bytes
+2026-06-20 12:10:01.912 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 12:10:01.912 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 77 bytes → 60 bytes
+2026-06-20 12:10:01.912 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: 10d598cb22bd5c1e13784f6dd198364bac130dc423c63887e68568897124e0bc, actual: 10d598cb22bd5c1e13784f6dd198364bac130dc423c63887e68568897124e0bc
+2026-06-20 12:10:01.912 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 12:10:01.913 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit13336678670691396122\output\test_song.mp3 (60 bytes)
+2026-06-20 12:10:01.920 [main] INFO  com.optical.sender.service.TransferService - Preparing transfer for file: retrans.mp3
+2026-06-20 12:10:01.921 [main] INFO  com.optical.sender.service.TransferService - Read 40 bytes from retrans.mp3
+2026-06-20 12:10:01.921 [main] INFO  com.optical.sender.service.TransferService - SHA-256 hash: bae2fead0c67e905d5299c7c51d9c16a8df180e4cba1add9b1e384dbe17655dc
+2026-06-20 12:10:01.922 [main] INFO  com.optical.sender.service.TransferService - Compressed: 40 bytes → 57 bytes (ratio: 142.5%)
+2026-06-20 12:10:01.922 [main] INFO  com.optical.sender.service.TransferService - Transfer ID: 4f1489e7-afcb-4eda-90aa-e3e23e6a03d8
+2026-06-20 12:10:01.922 [main] INFO  com.optical.sender.chunk.FileChunker - Splitting 57 bytes into 1 chunks of max 1000 bytes each
+2026-06-20 12:10:01.922 [main] INFO  com.optical.sender.chunk.FileChunker - Created 1 chunk packets for transfer 4f1489e7-afcb-4eda-90aa-e3e23e6a03d8
+2026-06-20 12:10:01.922 [main] INFO  com.optical.sender.service.TransferService - Transfer prepared: 3 total packets (1 header + 1 chunks + 1 end)
+2026-06-20 12:10:01.937 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:10:01.938 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: 4f1489e7-afcb-4eda-90aa-e3e23e6a03d8, File: retrans.mp3, Size: 40, Chunks: 1
+2026-06-20 12:10:01.950 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer END packet received. Chunks: 0/1
+2026-06-20 12:10:01.973 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/1
+2026-06-20 12:10:01.974 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 12:10:01.974 [main] INFO  com.optical.receiver.service.ReceptionService - All 1 chunks received! Ready for assembly.
+2026-06-20 12:10:01.984 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer END packet received. Chunks: 1/1
+2026-06-20 12:10:01.984 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 12:10:01.984 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 1 chunks, expected file: retrans.mp3
+2026-06-20 12:10:01.985 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 1 chunks...
+2026-06-20 12:10:01.985 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 57 bytes
+2026-06-20 12:10:01.985 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 12:10:01.985 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 57 bytes → 40 bytes
+2026-06-20 12:10:01.985 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: bae2fead0c67e905d5299c7c51d9c16a8df180e4cba1add9b1e384dbe17655dc, actual: bae2fead0c67e905d5299c7c51d9c16a8df180e4cba1add9b1e384dbe17655dc
+2026-06-20 12:10:01.985 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 12:10:01.988 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit7293575617425551432\output3\retrans.mp3 (40 bytes)
+2026-06-20 12:10:02.000 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 1 chunks, expected file: dup.mp3
+2026-06-20 12:10:02.000 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 1 chunks...
+2026-06-20 12:10:02.000 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 24 bytes
+2026-06-20 12:10:02.000 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 12:10:02.000 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 24 bytes → 4 bytes
+2026-06-20 12:10:02.000 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08, actual: 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
+2026-06-20 12:10:02.000 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 12:10:02.002 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit16425318614084191406\dup.mp3 (4 bytes)
+2026-06-20 12:10:02.003 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 1 chunks, expected file: dup.mp3
+2026-06-20 12:10:02.003 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 1 chunks...
+2026-06-20 12:10:02.003 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 24 bytes
+2026-06-20 12:10:02.003 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 12:10:02.003 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 24 bytes → 4 bytes
+2026-06-20 12:10:02.004 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08, actual: 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
+2026-06-20 12:10:02.004 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 12:10:02.011 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit16425318614084191406\dup_1.mp3 (4 bytes)
+2026-06-20 12:10:02.020 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 51 chunks, expected file: large.mp3
+2026-06-20 12:10:02.020 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 51 chunks...
+2026-06-20 12:10:02.020 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 50038 bytes
+2026-06-20 12:10:02.021 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 12:10:02.021 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 50038 bytes → 50000 bytes
+2026-06-20 12:10:02.022 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: 0c9979bee37368a3c2d18779916129d5954369b238dc5c0aabe5b9303f71fb37, actual: 0c9979bee37368a3c2d18779916129d5954369b238dc5c0aabe5b9303f71fb37
+2026-06-20 12:10:02.022 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 12:10:02.024 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit4115554865109038493\large.mp3 (50000 bytes)
+2026-06-20 12:10:02.029 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 5 chunks, expected file: test.mp3
+2026-06-20 12:10:02.029 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 5 chunks...
+2026-06-20 12:10:02.029 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 50 bytes
+2026-06-20 12:10:02.029 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 12:10:02.029 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 50 bytes → 32 bytes
+2026-06-20 12:10:02.029 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: f865ddfdc2970faed8a666a20db9df0ff2bc75e1b9e0f8868900b9ebe9d6b84a, actual: f865ddfdc2970faed8a666a20db9df0ff2bc75e1b9e0f8868900b9ebe9d6b84a
+2026-06-20 12:10:02.030 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-20 12:10:02.031 [main] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit15924744804282714309\test.mp3 (32 bytes)
+2026-06-20 12:10:02.037 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 2 chunks, expected file: test.mp3
+2026-06-20 12:10:02.044 [main] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 1 chunks, expected file: test.mp3
+2026-06-20 12:10:02.044 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merging 1 chunks...
+2026-06-20 12:10:02.044 [main] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 29 bytes
+2026-06-20 12:10:02.044 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-20 12:10:02.045 [main] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 29 bytes → 9 bytes
+2026-06-20 12:10:02.045 [main] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: wrong_hash_value, actual: 916f0027a575074ce72a331777c3478d6513f786a591bd892da1a577bf2335f9
+2026-06-20 12:10:02.140 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:10:02.140 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 1000, Chunks: 5
+2026-06-20 12:10:02.140 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer END packet received. Chunks: 0/5
+2026-06-20 12:10:02.146 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:10:02.146 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: song.mp3, Size: 5000, Chunks: 5
+2026-06-20 12:10:02.150 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:10:02.150 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 3000, Chunks: 3
+2026-06-20 12:10:02.150 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/3
+2026-06-20 12:10:02.155 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:10:02.155 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 1000, Chunks: 1
+2026-06-20 12:10:02.158 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:10:02.159 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 1000, Chunks: 3
+2026-06-20 12:10:02.159 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/3
+2026-06-20 12:10:02.166 [main] WARN  com.optical.shared.protocol.PacketSerializer - Failed to detect packet type from JSON: not valid json at all
+com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'not': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2572)
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2598)
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2606)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:765)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:3018)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2996)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._matchToken(ReaderBasedJsonParser.java:2761)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._matchNull(ReaderBasedJsonParser.java:2747)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:750)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4934)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3280)
+	at com.optical.shared.protocol.PacketSerializer.detectPacketType(PacketSerializer.java:83)
+	at com.optical.receiver.service.ReceptionService.processPacket(ReceptionService.java:67)
+	at com.optical.receiver.service.ReceptionServiceTest.processPacket_invalidJson_ignored(ReceptionServiceTest.java:155)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2026-06-20 12:10:02.169 [main] DEBUG com.optical.receiver.service.ReceptionService - Ignoring unknown packet type
+2026-06-20 12:10:02.172 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:10:02.172 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 200, Chunks: 2
+2026-06-20 12:10:02.174 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/2
+2026-06-20 12:10:02.177 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 2/2
+2026-06-20 12:10:02.177 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-20 12:10:02.178 [main] INFO  com.optical.receiver.service.ReceptionService - All 2 chunks received! Ready for assembly.
+2026-06-20 12:10:02.181 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:10:02.181 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 1000, Chunks: 2
+2026-06-20 12:10:02.182 [main] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/2
+2026-06-20 12:10:02.182 [main] INFO  com.optical.receiver.service.ReceptionService - Reception service reset
+2026-06-20 12:10:02.187 [main] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-20 12:10:02.187 [main] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: id-1, File: test.mp3, Size: 1000, Chunks: 1
+2026-06-20 12:10:02.187 [main] DEBUG com.optical.receiver.service.ReceptionService - Ignoring chunk with mismatched transferId: wrong-id
