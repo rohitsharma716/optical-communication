@@ -1,0 +1,390 @@
+2026-06-25 17:58:49.028 [JavaFX Application Thread] INFO  com.optical.receiver.ReceiverApp - Starting Optical File Transfer — Receiver
+2026-06-25 17:58:49.923 [JavaFX Application Thread] INFO  com.optical.receiver.ReceiverApp - Receiver UI ready
+2026-06-25 17:58:54.284 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - Camera source changed to: Phone Camera (IP Webcam)
+2026-06-25 17:58:57.744 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - Using IP camera at: http://192.168.1.100:8080
+2026-06-25 17:58:57.746 [camera-open] INFO  com.optical.receiver.camera.IpCameraCapture - Connecting to IP camera at: http://192.168.1.100:8080/video
+2026-06-25 17:59:22.930 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - Output directory set to: C:\Users\RS982\Downloads
+2026-06-25 17:59:39.233 [JavaFX Application Thread] INFO  com.optical.receiver.ReceiverApp - Starting Optical File Transfer — Receiver
+2026-06-25 17:59:40.062 [JavaFX Application Thread] INFO  com.optical.receiver.ReceiverApp - Receiver UI ready
+2026-06-25 17:59:43.110 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - Camera source changed to: Phone Camera (IP Webcam)
+2026-06-25 17:59:45.542 [ip-camera-test] INFO  com.optical.receiver.camera.IpCameraCapture - Connecting to IP camera at: http://192.168.1.100:8080/video
+2026-06-25 18:00:17.262 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - Camera source changed to: Laptop Webcam
+2026-06-25 18:00:18.568 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - Camera source changed to: Phone Camera (IP Webcam)
+2026-06-25 18:00:34.623 [JavaFX Application Thread] INFO  com.optical.receiver.ReceiverApp - Starting Optical File Transfer — Receiver
+2026-06-25 18:00:35.383 [JavaFX Application Thread] INFO  com.optical.receiver.ReceiverApp - Receiver UI ready
+2026-06-25 18:00:37.845 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - Camera source changed to: Phone Camera (IP Webcam)
+2026-06-25 18:00:50.376 [ip-camera-test] INFO  com.optical.receiver.camera.IpCameraCapture - Connecting to IP camera at: http://10.110.15.146:8080/video
+2026-06-25 18:00:52.391 [ip-camera-test] WARN  com.optical.receiver.camera.IpCameraCapture - MJPEG stream failed, trying JPEG snapshot mode at: http://10.110.15.146:8080/shot.jpg
+2026-06-25 18:00:52.694 [ip-camera-test] ERROR com.optical.receiver.camera.IpCameraCapture - Failed to connect to IP camera at: http://10.110.15.146:8080
+2026-06-25 18:00:52.696 [JavaFX Application Thread] WARN  com.optical.receiver.ui.ReceiverController - IP camera connection test failed: http://10.110.15.146:8080
+2026-06-25 18:01:06.334 [ip-camera-test] INFO  com.optical.receiver.camera.IpCameraCapture - Connecting to IP camera at: http://10.110.15.146:8080/video
+2026-06-25 18:01:07.431 [ip-camera-test] WARN  com.optical.receiver.camera.IpCameraCapture - MJPEG stream failed, trying JPEG snapshot mode at: http://10.110.15.146:8080/shot.jpg
+2026-06-25 18:01:07.723 [ip-camera-test] ERROR com.optical.receiver.camera.IpCameraCapture - Failed to connect to IP camera at: http://10.110.15.146:8080
+2026-06-25 18:01:07.724 [JavaFX Application Thread] WARN  com.optical.receiver.ui.ReceiverController - IP camera connection test failed: http://10.110.15.146:8080
+2026-06-25 18:01:08.569 [ip-camera-test] INFO  com.optical.receiver.camera.IpCameraCapture - Connecting to IP camera at: http://10.110.15.146:8080/video
+2026-06-25 18:01:09.528 [ip-camera-test] WARN  com.optical.receiver.camera.IpCameraCapture - MJPEG stream failed, trying JPEG snapshot mode at: http://10.110.15.146:8080/shot.jpg
+2026-06-25 18:01:09.790 [ip-camera-test] ERROR com.optical.receiver.camera.IpCameraCapture - Failed to connect to IP camera at: http://10.110.15.146:8080
+2026-06-25 18:01:09.791 [JavaFX Application Thread] WARN  com.optical.receiver.ui.ReceiverController - IP camera connection test failed: http://10.110.15.146:8080
+2026-06-25 18:01:48.725 [ip-camera-test] INFO  com.optical.receiver.camera.IpCameraCapture - Connecting to IP camera at: http://10.110.15.146:8080/video
+2026-06-25 18:01:51.898 [ip-camera-test] WARN  com.optical.receiver.camera.IpCameraCapture - MJPEG stream failed, trying JPEG snapshot mode at: http://10.110.15.146:8080/shot.jpg
+2026-06-25 18:01:52.112 [ip-camera-test] ERROR com.optical.receiver.camera.IpCameraCapture - Failed to connect to IP camera at: http://10.110.15.146:8080
+2026-06-25 18:01:52.113 [JavaFX Application Thread] WARN  com.optical.receiver.ui.ReceiverController - IP camera connection test failed: http://10.110.15.146:8080
+2026-06-25 18:02:27.124 [ip-camera-test] INFO  com.optical.receiver.camera.IpCameraCapture - Connecting to IP camera at: http://10.110.15.146:8080/video
+2026-06-25 18:02:28.687 [ip-camera-test] WARN  com.optical.receiver.camera.IpCameraCapture - MJPEG stream failed, trying JPEG snapshot mode at: http://10.110.15.146:8080/shot.jpg
+2026-06-25 18:02:28.896 [ip-camera-test] ERROR com.optical.receiver.camera.IpCameraCapture - Failed to connect to IP camera at: http://10.110.15.146:8080
+2026-06-25 18:02:28.897 [JavaFX Application Thread] WARN  com.optical.receiver.ui.ReceiverController - IP camera connection test failed: http://10.110.15.146:8080
+2026-06-25 18:02:32.464 [ip-camera-test] INFO  com.optical.receiver.camera.IpCameraCapture - Connecting to IP camera at: http://10.110.15.146:8080/video
+2026-06-25 18:02:33.958 [ip-camera-test] WARN  com.optical.receiver.camera.IpCameraCapture - MJPEG stream failed, trying JPEG snapshot mode at: http://10.110.15.146:8080/shot.jpg
+2026-06-25 18:02:34.165 [ip-camera-test] ERROR com.optical.receiver.camera.IpCameraCapture - Failed to connect to IP camera at: http://10.110.15.146:8080
+2026-06-25 18:02:34.166 [JavaFX Application Thread] WARN  com.optical.receiver.ui.ReceiverController - IP camera connection test failed: http://10.110.15.146:8080
+2026-06-25 18:02:51.101 [ip-camera-test] INFO  com.optical.receiver.camera.IpCameraCapture - Connecting to IP camera at: http://10.110.15.146:8080/video
+2026-06-25 18:02:54.288 [ip-camera-test] WARN  com.optical.receiver.camera.IpCameraCapture - MJPEG stream failed, trying JPEG snapshot mode at: http://10.110.15.146:8080/shot.jpg
+2026-06-25 18:02:54.488 [ip-camera-test] ERROR com.optical.receiver.camera.IpCameraCapture - Failed to connect to IP camera at: http://10.110.15.146:8080
+2026-06-25 18:02:54.489 [JavaFX Application Thread] WARN  com.optical.receiver.ui.ReceiverController - IP camera connection test failed: http://10.110.15.146:8080
+2026-06-25 18:03:04.375 [ip-camera-test] INFO  com.optical.receiver.camera.IpCameraCapture - Connecting to IP camera at: http://10.110.15.146:8080/video
+2026-06-25 18:03:06.583 [ip-camera-test] WARN  com.optical.receiver.camera.IpCameraCapture - MJPEG stream failed, trying JPEG snapshot mode at: http://10.110.15.146:8080/shot.jpg
+2026-06-25 18:03:07.025 [ip-camera-test] ERROR com.optical.receiver.camera.IpCameraCapture - Failed to connect to IP camera at: http://10.110.15.146:8080
+2026-06-25 18:03:07.027 [JavaFX Application Thread] WARN  com.optical.receiver.ui.ReceiverController - IP camera connection test failed: http://10.110.15.146:8080
+2026-06-25 18:07:33.375 [JavaFX Application Thread] INFO  com.optical.receiver.ReceiverApp - Starting Optical File Transfer — Receiver
+2026-06-25 18:07:34.286 [JavaFX Application Thread] INFO  com.optical.receiver.ReceiverApp - Receiver UI ready
+2026-06-25 18:07:42.194 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - Camera source changed to: Phone Camera (IP Webcam)
+2026-06-25 18:07:48.256 [ip-camera-test] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://192.168.1.100:8080/shot.jpg: Connect timed out
+2026-06-25 18:07:48.260 [JavaFX Application Thread] WARN  com.optical.receiver.ui.ReceiverController - IP camera connection test failed: http://192.168.1.100:8080
+2026-06-25 18:08:11.736 [JavaFX Application Thread] INFO  com.optical.receiver.ReceiverApp - Receiver application closing
+2026-06-25 18:08:11.739 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - Receiver controller shut down
+2026-06-25 18:08:11.757 [JavaFX Application Thread] INFO  com.optical.receiver.ReceiverApp - Receiver application stopped
+2026-06-25 18:08:58.779 [JavaFX Application Thread] INFO  com.optical.receiver.ReceiverApp - Starting Optical File Transfer — Receiver
+2026-06-25 18:08:59.638 [JavaFX Application Thread] INFO  com.optical.receiver.ReceiverApp - Receiver UI ready
+2026-06-25 18:09:02.287 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - Camera source changed to: Phone Camera (IP Webcam)
+2026-06-25 18:09:27.533 [ip-camera-test] INFO  com.optical.receiver.camera.IpCameraCapture - IP camera test passed: http://10.110.15.146:8080/shot.jpg (45226 bytes)
+2026-06-25 18:09:27.536 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - IP camera connection test passed: http://10.110.15.146:8080
+2026-06-25 18:09:37.464 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - Using IP camera at: http://10.110.15.146:8080
+2026-06-25 18:09:37.466 [camera-open] INFO  com.optical.receiver.camera.IpCameraCapture - Testing IP camera connection at: http://10.110.15.146:8080/shot.jpg
+2026-06-25 18:09:37.552 [camera-open] INFO  com.optical.receiver.camera.IpCameraCapture - IP camera connected: http://10.110.15.146:8080/shot.jpg (snapshot size: 136974 bytes)
+2026-06-25 18:09:37.561 [JavaFX Application Thread] INFO  com.optical.receiver.service.ReceptionService - Reception service reset
+2026-06-25 18:09:37.567 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - Camera scanning started: IP Camera (http://10.110.15.146:8080)
+2026-06-25 18:09:46.472 [JavaFX Application Thread] INFO  com.optical.receiver.camera.IpCameraCapture - IP camera released
+2026-06-25 18:09:46.473 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - Camera scanning stopped
+2026-06-25 18:11:29.205 [ip-camera-test] INFO  com.optical.receiver.camera.IpCameraCapture - IP camera test passed: http://10.110.15.146:8080/shot.jpg (142400 bytes)
+2026-06-25 18:11:29.206 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - IP camera connection test passed: http://10.110.15.146:8080
+2026-06-25 18:13:50.263 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - Using IP camera at: http://10.110.15.146:8080
+2026-06-25 18:13:50.263 [JavaFX Application Thread] INFO  com.optical.receiver.camera.IpCameraCapture - IP camera released
+2026-06-25 18:13:50.265 [camera-open] INFO  com.optical.receiver.camera.IpCameraCapture - Testing IP camera connection at: http://10.110.15.146:8080/shot.jpg
+2026-06-25 18:13:50.327 [camera-open] INFO  com.optical.receiver.camera.IpCameraCapture - IP camera connected: http://10.110.15.146:8080/shot.jpg (snapshot size: 119357 bytes)
+2026-06-25 18:13:50.328 [JavaFX Application Thread] INFO  com.optical.receiver.service.ReceptionService - Reception service reset
+2026-06-25 18:13:50.329 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - Camera scanning started: IP Camera (http://10.110.15.146:8080)
+2026-06-25 18:14:58.851 [JavaFX Application Thread] INFO  com.optical.receiver.camera.IpCameraCapture - IP camera released
+2026-06-25 18:14:58.852 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - Camera scanning stopped
+2026-06-25 18:15:24.364 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - Using IP camera at: http://10.110.15.146:8080
+2026-06-25 18:15:24.364 [JavaFX Application Thread] INFO  com.optical.receiver.camera.IpCameraCapture - IP camera released
+2026-06-25 18:15:24.366 [camera-open] INFO  com.optical.receiver.camera.IpCameraCapture - Testing IP camera connection at: http://10.110.15.146:8080/shot.jpg
+2026-06-25 18:15:24.422 [camera-open] INFO  com.optical.receiver.camera.IpCameraCapture - IP camera connected: http://10.110.15.146:8080/shot.jpg (snapshot size: 169658 bytes)
+2026-06-25 18:15:24.423 [JavaFX Application Thread] INFO  com.optical.receiver.service.ReceptionService - Reception service reset
+2026-06-25 18:15:24.424 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - Camera scanning started: IP Camera (http://10.110.15.146:8080)
+2026-06-25 18:17:37.571 [qr-scan-loop] WARN  com.optical.shared.protocol.PacketSerializer - Failed to detect packet type from JSON: 04314125
+com.fasterxml.jackson.core.JsonParseException: Invalid numeric value: Leading zeroes not allowed
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2572)
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2598)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase.reportInvalidNumber(ParserMinimalBase.java:599)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._verifyNLZ2(ReaderBasedJsonParser.java:1706)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._verifyNoLeadingZeroes(ReaderBasedJsonParser.java:1693)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._parseNumber2(ReaderBasedJsonParser.java:1555)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._parseUnsignedNumber(ReaderBasedJsonParser.java:1364)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:777)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4934)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3280)
+	at com.optical.shared.protocol.PacketSerializer.detectPacketType(PacketSerializer.java:83)
+	at com.optical.receiver.service.ReceptionService.processPacket(ReceptionService.java:67)
+	at com.optical.receiver.ui.ReceiverController.lambda$16(ReceiverController.java:383)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at com.optical.receiver.ui.ReceiverController.scanLoop(ReceiverController.java:379)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-06-25 18:17:37.575 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Ignoring unknown packet type
+2026-06-25 18:18:46.639 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Ignoring unknown packet type
+2026-06-25 18:19:18.890 [JavaFX Application Thread] INFO  com.optical.receiver.camera.IpCameraCapture - IP camera released
+2026-06-25 18:19:18.893 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - Camera scanning stopped
+2026-06-25 18:19:22.243 [ip-camera-test] INFO  com.optical.receiver.camera.IpCameraCapture - IP camera test passed: http://10.110.15.146:8080/shot.jpg (195691 bytes)
+2026-06-25 18:19:22.244 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - IP camera connection test passed: http://10.110.15.146:8080
+2026-06-25 18:19:23.062 [ip-camera-test] INFO  com.optical.receiver.camera.IpCameraCapture - IP camera test passed: http://10.110.15.146:8080/shot.jpg (184944 bytes)
+2026-06-25 18:19:23.064 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - IP camera connection test passed: http://10.110.15.146:8080
+2026-06-25 18:19:56.501 [ip-camera-test] INFO  com.optical.receiver.camera.IpCameraCapture - IP camera test passed: http://10.110.15.146:8080/shot.jpg (181958 bytes)
+2026-06-25 18:19:56.504 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - IP camera connection test passed: http://10.110.15.146:8080
+2026-06-25 18:20:00.893 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - Using IP camera at: http://10.110.15.146:8080
+2026-06-25 18:20:00.893 [JavaFX Application Thread] INFO  com.optical.receiver.camera.IpCameraCapture - IP camera released
+2026-06-25 18:20:00.894 [camera-open] INFO  com.optical.receiver.camera.IpCameraCapture - Testing IP camera connection at: http://10.110.15.146:8080/shot.jpg
+2026-06-25 18:20:00.982 [camera-open] INFO  com.optical.receiver.camera.IpCameraCapture - IP camera connected: http://10.110.15.146:8080/shot.jpg (snapshot size: 159866 bytes)
+2026-06-25 18:20:00.983 [JavaFX Application Thread] INFO  com.optical.receiver.service.ReceptionService - Reception service reset
+2026-06-25 18:20:00.984 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - Camera scanning started: IP Camera (http://10.110.15.146:8080)
+2026-06-25 18:20:21.754 [qr-scan-loop] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-25 18:20:21.755 [qr-scan-loop] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: 7f19d641-b82d-40dc-a63d-cff0373a1d66, File: Bairan - Bairan (128 kbps).mp3, Size: 2415111, Chunks: 2402
+2026-06-25 18:20:28.039 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 6/2402
+2026-06-25 18:20:28.841 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 7/2402
+2026-06-25 18:20:31.723 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 9/2402
+2026-06-25 18:20:32.105 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 10/2402
+2026-06-25 18:20:33.149 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 11/2402
+2026-06-25 18:20:34.901 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 13/2402
+2026-06-25 18:20:35.757 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 14/2402
+2026-06-25 18:20:39.746 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 18/2402
+2026-06-25 18:20:40.802 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 19/2402
+2026-06-25 18:20:42.566 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 20/2402
+2026-06-25 18:20:43.401 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 21/2402
+2026-06-25 18:20:44.465 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 22/2402
+2026-06-25 18:20:46.316 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 24/2402
+2026-06-25 18:20:46.720 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 25/2402
+2026-06-25 18:20:48.522 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 26/2402
+2026-06-25 18:20:48.705 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 27/2402
+2026-06-25 18:20:50.745 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 29/2402
+2026-06-25 18:20:51.517 [qr-scan-loop] WARN  com.optical.shared.protocol.PacketSerializer - Failed to detect packet type from JSON: 03129142
+com.fasterxml.jackson.core.JsonParseException: Invalid numeric value: Leading zeroes not allowed
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2572)
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2598)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase.reportInvalidNumber(ParserMinimalBase.java:599)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._verifyNLZ2(ReaderBasedJsonParser.java:1706)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._verifyNoLeadingZeroes(ReaderBasedJsonParser.java:1693)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._parseNumber2(ReaderBasedJsonParser.java:1555)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._parseUnsignedNumber(ReaderBasedJsonParser.java:1364)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:777)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4934)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3280)
+	at com.optical.shared.protocol.PacketSerializer.detectPacketType(PacketSerializer.java:83)
+	at com.optical.receiver.service.ReceptionService.processPacket(ReceptionService.java:67)
+	at com.optical.receiver.ui.ReceiverController.lambda$16(ReceiverController.java:383)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at com.optical.receiver.ui.ReceiverController.scanLoop(ReceiverController.java:379)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-06-25 18:20:51.519 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Ignoring unknown packet type
+2026-06-25 18:20:51.696 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 30/2402
+2026-06-25 18:20:52.669 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 31/2402
+2026-06-25 18:20:57.800 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 36/2402
+2026-06-25 18:20:58.892 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 37/2402
+2026-06-25 18:20:59.897 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 38/2402
+2026-06-25 18:21:01.098 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 39/2402
+2026-06-25 18:21:01.910 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 40/2402
+2026-06-25 18:21:03.894 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 42/2402
+2026-06-25 18:21:06.728 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 45/2402
+2026-06-25 18:21:10.669 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 49/2402
+2026-06-25 18:21:12.408 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 50/2402
+2026-06-25 18:21:14.694 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 53/2402
+2026-06-25 18:21:29.494 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 67/2402
+2026-06-25 18:21:30.274 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 68/2402
+2026-06-25 18:21:31.826 [qr-scan-loop] WARN  com.optical.shared.protocol.PacketSerializer - Failed to detect packet type from JSON: 09673027
+com.fasterxml.jackson.core.JsonParseException: Invalid numeric value: Leading zeroes not allowed
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2572)
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2598)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase.reportInvalidNumber(ParserMinimalBase.java:599)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._verifyNLZ2(ReaderBasedJsonParser.java:1706)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._verifyNoLeadingZeroes(ReaderBasedJsonParser.java:1693)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._parseNumber2(ReaderBasedJsonParser.java:1555)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._parseUnsignedNumber(ReaderBasedJsonParser.java:1364)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:777)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4934)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3280)
+	at com.optical.shared.protocol.PacketSerializer.detectPacketType(PacketSerializer.java:83)
+	at com.optical.receiver.service.ReceptionService.processPacket(ReceptionService.java:67)
+	at com.optical.receiver.ui.ReceiverController.lambda$16(ReceiverController.java:383)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at com.optical.receiver.ui.ReceiverController.scanLoop(ReceiverController.java:379)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-06-25 18:21:31.827 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Ignoring unknown packet type
+2026-06-25 18:21:32.425 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 70/2402
+2026-06-25 18:21:33.125 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 71/2402
+2026-06-25 18:21:34.482 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 72/2402
+2026-06-25 18:21:36.783 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 75/2402
+2026-06-25 18:21:42.943 [JavaFX Application Thread] INFO  com.optical.receiver.camera.IpCameraCapture - IP camera released
+2026-06-25 18:21:42.946 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - Camera scanning stopped
+2026-06-25 18:27:45.094 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - Using IP camera at: http://10.110.15.146:8080
+2026-06-25 18:27:45.094 [JavaFX Application Thread] INFO  com.optical.receiver.camera.IpCameraCapture - IP camera released
+2026-06-25 18:27:45.095 [camera-open] INFO  com.optical.receiver.camera.IpCameraCapture - Testing IP camera connection at: http://10.110.15.146:8080/shot.jpg
+2026-06-25 18:27:50.166 [camera-open] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Read timed out
+2026-06-25 18:27:50.167 [camera-open] ERROR com.optical.receiver.camera.IpCameraCapture - Failed to connect to IP camera at: http://10.110.15.146:8080/shot.jpg
+2026-06-25 18:27:57.911 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - Output directory set to: C:\Users\RS982\Downloads
+2026-06-25 18:28:09.085 [JavaFX Application Thread] INFO  com.optical.receiver.ReceiverApp - Starting Optical File Transfer — Receiver
+2026-06-25 18:28:09.830 [JavaFX Application Thread] INFO  com.optical.receiver.ReceiverApp - Receiver UI ready
+2026-06-25 18:28:17.967 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - Camera source changed to: Phone Camera (IP Webcam)
+2026-06-25 18:28:36.614 [ip-camera-test] INFO  com.optical.receiver.camera.IpCameraCapture - IP camera test passed: http://10.110.15.146:8080/shot.jpg (91835 bytes)
+2026-06-25 18:28:36.618 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - IP camera connection test passed: http://10.110.15.146:8080
+2026-06-25 18:29:16.260 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - Output directory set to: C:\Users\RS982\Downloads
+2026-06-25 18:29:35.243 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - Using IP camera at: http://10.110.15.146:8080
+2026-06-25 18:29:35.245 [camera-open] INFO  com.optical.receiver.camera.IpCameraCapture - Testing IP camera connection at: http://10.110.15.146:8080/shot.jpg
+2026-06-25 18:29:35.328 [camera-open] INFO  com.optical.receiver.camera.IpCameraCapture - IP camera connected: http://10.110.15.146:8080/shot.jpg (snapshot size: 119609 bytes)
+2026-06-25 18:29:35.331 [JavaFX Application Thread] INFO  com.optical.receiver.service.ReceptionService - Reception service reset
+2026-06-25 18:29:35.332 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - Camera scanning started: IP Camera (http://10.110.15.146:8080)
+2026-06-25 18:30:06.557 [qr-scan-loop] WARN  com.optical.shared.protocol.PacketSerializer - Failed to detect packet type from JSON: 05356023
+com.fasterxml.jackson.core.JsonParseException: Invalid numeric value: Leading zeroes not allowed
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2572)
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2598)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase.reportInvalidNumber(ParserMinimalBase.java:599)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._verifyNLZ2(ReaderBasedJsonParser.java:1706)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._verifyNoLeadingZeroes(ReaderBasedJsonParser.java:1693)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._parseNumber2(ReaderBasedJsonParser.java:1555)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._parseUnsignedNumber(ReaderBasedJsonParser.java:1364)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:777)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4934)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3280)
+	at com.optical.shared.protocol.PacketSerializer.detectPacketType(PacketSerializer.java:83)
+	at com.optical.receiver.service.ReceptionService.processPacket(ReceptionService.java:67)
+	at com.optical.receiver.ui.ReceiverController.lambda$16(ReceiverController.java:383)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at com.optical.receiver.ui.ReceiverController.scanLoop(ReceiverController.java:379)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-06-25 18:30:06.560 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Ignoring unknown packet type
+2026-06-25 18:32:12.849 [qr-scan-loop] INFO  com.optical.receiver.service.ReceptionService - State changed to: RECEIVING
+2026-06-25 18:32:12.850 [qr-scan-loop] INFO  com.optical.receiver.service.ReceptionService - Transfer header received — ID: 30f714e9-e93f-41b4-b03e-ceaf8648fdce, File: freesound_community-10-seconds-39474 (1).mp3, Size: 33165, Chunks: 33
+2026-06-25 18:32:13.790 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 1/33
+2026-06-25 18:32:14.893 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 2/33
+2026-06-25 18:32:15.646 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 3/33
+2026-06-25 18:32:17.103 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 4/33
+2026-06-25 18:32:17.607 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 5/33
+2026-06-25 18:32:19.899 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 7/33
+2026-06-25 18:32:22.635 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 10/33
+2026-06-25 18:32:23.979 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 11/33
+2026-06-25 18:32:25.908 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 13/33
+2026-06-25 18:32:27.291 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 14/33
+2026-06-25 18:32:29.023 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 16/33
+2026-06-25 18:32:29.875 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 17/33
+2026-06-25 18:32:31.168 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 18/33
+2026-06-25 18:32:31.625 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 19/33
+2026-06-25 18:32:33.071 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 20/33
+2026-06-25 18:32:33.722 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 21/33
+2026-06-25 18:32:34.879 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 22/33
+2026-06-25 18:32:35.584 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 23/33
+2026-06-25 18:32:36.771 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 24/33
+2026-06-25 18:32:37.720 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 25/33
+2026-06-25 18:32:38.724 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 26/33
+2026-06-25 18:32:39.980 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 27/33
+2026-06-25 18:32:40.942 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 28/33
+2026-06-25 18:32:42.084 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 29/33
+2026-06-25 18:32:43.602 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 31/33
+2026-06-25 18:32:44.876 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 32/33
+2026-06-25 18:32:53.644 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 6/33
+2026-06-25 18:32:55.630 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 8/33
+2026-06-25 18:32:57.442 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 9/33
+2026-06-25 18:33:00.449 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 12/33
+2026-06-25 18:33:02.650 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 15/33
+2026-06-25 18:33:13.057 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Ignoring unknown packet type
+2026-06-25 18:33:17.941 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 30/33
+2026-06-25 18:34:30.890 [qr-scan-loop] DEBUG com.optical.receiver.service.ReceptionService - Received chunk 33/33
+2026-06-25 18:34:30.891 [qr-scan-loop] INFO  com.optical.receiver.service.ReceptionService - State changed to: COMPLETE
+2026-06-25 18:34:30.892 [qr-scan-loop] INFO  com.optical.receiver.service.ReceptionService - All 33 chunks received! Ready for assembly.
+2026-06-25 18:34:37.623 [file-assembly] INFO  com.optical.receiver.assembler.FileAssembler - Starting file assembly: 33 chunks, expected file: freesound_community-10-seconds-39474 (1).mp3
+2026-06-25 18:34:37.624 [file-assembly] INFO  com.optical.receiver.assembler.FileAssembler - Merging 33 chunks...
+2026-06-25 18:34:37.629 [file-assembly] INFO  com.optical.receiver.assembler.FileAssembler - Merged compressed data: 32211 bytes
+2026-06-25 18:34:37.631 [file-assembly] INFO  com.optical.receiver.assembler.FileAssembler - Decompressing GZIP data...
+2026-06-25 18:34:37.636 [file-assembly] INFO  com.optical.receiver.assembler.FileAssembler - Decompressed: 32211 bytes → 33165 bytes
+2026-06-25 18:34:37.639 [file-assembly] INFO  com.optical.receiver.assembler.FileAssembler - Hash verification — expected: 5a6af7d0654b6ff185490b6c54f85a942f38343f9da6b6f4172e3f72b2741018, actual: 5a6af7d0654b6ff185490b6c54f85a942f38343f9da6b6f4172e3f72b2741018
+2026-06-25 18:34:37.640 [file-assembly] INFO  com.optical.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+2026-06-25 18:34:37.644 [file-assembly] INFO  com.optical.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\Downloads\freesound_community-10-seconds-39474 (1).mp3 (33165 bytes)
+2026-06-25 18:34:37.647 [JavaFX Application Thread] INFO  com.optical.receiver.ui.ReceiverController - File successfully saved: C:\Users\RS982\Downloads\freesound_community-10-seconds-39474 (1).mp3
+2026-06-25 18:34:59.727 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:35:01.817 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:35:03.919 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:35:06.002 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:35:08.218 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:35:10.302 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:35:12.379 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:35:14.464 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:35:16.560 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:35:18.642 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:35:20.716 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:35:22.760 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:35:24.821 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:35:26.907 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:35:28.957 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:35:31.053 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:35:33.103 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:35:35.184 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:35:37.260 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:35:39.336 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:35:41.402 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:35:43.461 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:35:45.527 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:35:47.607 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:35:49.691 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:35:51.748 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:35:53.802 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:35:55.880 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:35:57.984 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:36:00.052 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:36:02.108 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:36:04.192 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:36:06.252 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:36:08.320 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:36:10.382 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:36:12.567 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:36:14.655 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:36:16.729 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:36:18.825 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:36:20.898 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:36:22.997 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:36:25.052 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:36:27.153 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:36:29.221 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:36:31.276 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:36:33.353 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:36:35.422 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:36:37.503 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:36:39.579 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:36:41.638 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:36:43.711 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:36:45.779 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:36:47.857 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:36:49.911 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:36:51.984 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:36:54.055 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:36:56.119 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:36:58.191 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:37:00.282 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:37:02.367 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:37:04.439 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:37:06.502 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:37:08.588 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:37:10.667 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:37:12.752 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:37:14.830 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:37:16.940 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:37:19.002 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:37:21.065 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:37:23.152 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:37:25.220 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:37:27.272 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:37:29.352 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:37:31.413 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:37:33.502 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:37:35.569 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:37:37.620 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:37:39.702 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:37:41.765 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:37:43.852 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:37:45.916 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:37:47.989 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:37:50.068 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:37:52.152 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:37:54.216 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:37:56.302 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:37:58.370 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:38:00.442 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:38:02.524 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:38:04.602 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:38:06.668 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:38:08.752 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:38:10.847 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:38:12.902 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:38:14.981 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:38:17.057 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:38:19.115 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:38:21.169 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:38:23.260 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:38:25.325 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:38:27.382 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:38:29.435 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:38:31.486 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:38:33.570 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:38:35.621 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:38:37.708 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:38:39.780 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:38:41.859 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt
+2026-06-25 18:38:43.928 [qr-scan-loop] DEBUG com.optical.receiver.camera.IpCameraCapture - Failed to fetch snapshot from http://10.110.15.146:8080/shot.jpg: Connection refused: getsockopt

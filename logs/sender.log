@@ -1,0 +1,23 @@
+2026-06-25 17:15:55.508 [JavaFX Application Thread] INFO  com.optical.sender.SenderApp - Starting Optical File Transfer — Sender
+2026-06-25 17:15:56.305 [JavaFX Application Thread] INFO  com.optical.sender.SenderApp - Sender UI ready
+2026-06-25 17:16:10.897 [JavaFX Application Thread] INFO  com.optical.sender.ui.SenderController - Selected file: BAIRAN.mp3 (589.8 KB)
+2026-06-25 17:16:19.238 [transfer-prep] INFO  com.optical.sender.service.TransferService - Preparing transfer for file: BAIRAN.mp3
+2026-06-25 17:16:19.243 [transfer-prep] INFO  com.optical.sender.service.TransferService - Read 603956 bytes from BAIRAN.mp3
+2026-06-25 17:16:19.275 [transfer-prep] INFO  com.optical.sender.service.TransferService - SHA-256 hash: 690cb9db466e89a43a1d3fa27a6174711c450fdd4094690116d2349145a9c3ee
+2026-06-25 17:16:19.316 [transfer-prep] INFO  com.optical.sender.service.TransferService - Compressed: 603956 bytes → 581831 bytes (ratio: 96.3%)
+2026-06-25 17:16:19.317 [transfer-prep] INFO  com.optical.sender.service.TransferService - Transfer ID: 98867b18-9a5d-426e-a007-4e15e33fbbfd
+2026-06-25 17:16:19.318 [transfer-prep] INFO  com.optical.sender.chunk.FileChunker - Splitting 581831 bytes into 582 chunks of max 1000 bytes each
+2026-06-25 17:16:19.325 [transfer-prep] INFO  com.optical.sender.chunk.FileChunker - Created 582 chunk packets for transfer 98867b18-9a5d-426e-a007-4e15e33fbbfd
+2026-06-25 17:16:19.593 [transfer-prep] INFO  com.optical.sender.service.TransferService - Transfer prepared: 584 total packets (1 header + 582 chunks + 1 end)
+2026-06-25 17:16:19.595 [JavaFX Application Thread] INFO  com.optical.sender.ui.SenderController - Transfer started: 582 chunks at 5 QR/sec
+2026-06-25 17:16:23.115 [JavaFX Application Thread] INFO  com.optical.sender.ui.SenderController - Transfer stopped by user
+2026-06-25 17:16:49.805 [transfer-prep] INFO  com.optical.sender.service.TransferService - Preparing transfer for file: BAIRAN.mp3
+2026-06-25 17:16:49.806 [transfer-prep] INFO  com.optical.sender.service.TransferService - Read 603956 bytes from BAIRAN.mp3
+2026-06-25 17:16:49.808 [transfer-prep] INFO  com.optical.sender.service.TransferService - SHA-256 hash: 690cb9db466e89a43a1d3fa27a6174711c450fdd4094690116d2349145a9c3ee
+2026-06-25 17:16:49.852 [transfer-prep] INFO  com.optical.sender.service.TransferService - Compressed: 603956 bytes → 581831 bytes (ratio: 96.3%)
+2026-06-25 17:16:49.852 [transfer-prep] INFO  com.optical.sender.service.TransferService - Transfer ID: 16f7d65f-faf7-44bc-8587-785cadcf78c6
+2026-06-25 17:16:49.852 [transfer-prep] INFO  com.optical.sender.chunk.FileChunker - Splitting 581831 bytes into 582 chunks of max 1000 bytes each
+2026-06-25 17:16:49.855 [transfer-prep] INFO  com.optical.sender.chunk.FileChunker - Created 582 chunk packets for transfer 16f7d65f-faf7-44bc-8587-785cadcf78c6
+2026-06-25 17:16:49.865 [transfer-prep] INFO  com.optical.sender.service.TransferService - Transfer prepared: 584 total packets (1 header + 582 chunks + 1 end)
+2026-06-25 17:16:49.865 [JavaFX Application Thread] INFO  com.optical.sender.ui.SenderController - Transfer started: 582 chunks at 1 QR/sec
+2026-06-25 17:17:17.459 [JavaFX Application Thread] INFO  com.optical.sender.ui.SenderController - Transfer stopped by user

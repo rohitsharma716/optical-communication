@@ -216,3 +216,80 @@
     -fx-padding: 0;
     -fx-shape: "";
 }
+
+/* --- Camera Source Selector --- */
+.camera-combo {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+    -fx-text-fill: #e0e0e0;
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-radius: 8;
+    -fx-border-color: rgba(79, 195, 247, 0.25);
+    -fx-border-radius: 8;
+    -fx-padding: 6 12 6 12;
+    -fx-cursor: hand;
+    -fx-pref-width: 260;
+}
+
+.camera-combo:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.12);
+    -fx-border-color: rgba(79, 195, 247, 0.5);
+}
+
+.camera-combo .list-cell {
+    -fx-text-fill: #e0e0e0;
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: transparent;
+}
+
+.camera-combo-popup .list-view {
+    -fx-background-color: #1a2332;
+    -fx-border-color: rgba(79, 195, 247, 0.3);
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+.camera-combo-popup .list-cell {
+    -fx-background-color: #1a2332;
+    -fx-text-fill: #e0e0e0;
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-padding: 8 16 8 16;
+}
+
+.camera-combo-popup .list-cell:hover {
+    -fx-background-color: rgba(79, 195, 247, 0.15);
+}
+
+.camera-combo-popup .list-cell:selected {
+    -fx-background-color: rgba(79, 195, 247, 0.25);
+    -fx-text-fill: #4fc3f7;
+}
+
+/* --- IP Camera URL Field --- */
+.ip-url-field {
+    -fx-background-color: rgba(255, 255, 255, 0.06);
+    -fx-text-fill: #e0e0e0;
+    -fx-prompt-text-fill: rgba(255, 255, 255, 0.3);
+    -fx-font-family: 'Consolas', 'Courier New', monospace;
+    -fx-font-size: 13px;
+    -fx-background-radius: 8;
+    -fx-border-color: rgba(255, 255, 255, 0.12);
+    -fx-border-radius: 8;
+    -fx-padding: 8 14 8 14;
+}
+
+.ip-url-field:focused {
+    -fx-background-color: rgba(255, 255, 255, 0.09);
+    -fx-border-color: rgba(79, 195, 247, 0.5);
+    -fx-effect: dropshadow(gaussian, rgba(79, 195, 247, 0.2), 10, 0, 0, 0);
+}
+
+/* --- Connection Status --- */
+.connection-status {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #90caf9;
+}

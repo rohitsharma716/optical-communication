@@ -17,6 +17,9 @@ public class ReceiverConfig {
     /** Camera capture height */
     public static final int CAMERA_HEIGHT = 480;
 
+    /** Default IP camera URL (for phone camera via IP Webcam app) */
+    public static final String DEFAULT_IP_CAMERA_URL = "http://192.168.1.100:8080";
+
     /** Default output directory for received files */
     public static final String OUTPUT_DIR = "received_files";
 

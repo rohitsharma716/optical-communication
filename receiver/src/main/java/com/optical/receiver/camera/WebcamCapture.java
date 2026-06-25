@@ -19,7 +19,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
  * Manages webcam capture using OpenCV's VideoCapture.
  * Provides frame grabbing and conversion to BufferedImage for QR decoding.
  */
-public class WebcamCapture {
+public class WebcamCapture implements CameraSource {
 
     private static final Logger log = LoggerFactory.getLogger(WebcamCapture.class);
 
@@ -40,6 +40,7 @@ public class WebcamCapture {
      *
      * @return true if the camera was opened successfully
      */
+    @Override
     public boolean open() {
         capture = new VideoCapture(cameraIndex);
 
@@ -64,6 +65,7 @@ public class WebcamCapture {
      *
      * @return the frame as an OpenCV Mat, or null if capture failed
      */
+    @Override
     public Mat grabFrame() {
         if (capture == null || !capture.isOpened()) {
             return null;
@@ -83,6 +85,7 @@ public class WebcamCapture {
      * @param mat the OpenCV Mat frame
      * @return BufferedImage representation, or null on conversion failure
      */
+    @Override
     public BufferedImage matToBufferedImage(Mat mat) {
         if (mat == null || mat.empty()) {
             return null;
@@ -106,6 +109,7 @@ public class WebcamCapture {
     /**
      * Check if the webcam is currently active.
      */
+    @Override
     public boolean isRunning() {
         return running.get() && capture != null && capture.isOpened();
     }
@@ -113,11 +117,17 @@ public class WebcamCapture {
     /**
      * Release the webcam resources.
      */
+    @Override
     public void release() {
         running.set(false);
         if (capture != null && capture.isOpened()) {
             capture.release();
             log.info("Webcam released");
         }
+    }
+
+    @Override
+    public String getDescription() {
+        return "Webcam (index " + cameraIndex + ")";
     }
 }

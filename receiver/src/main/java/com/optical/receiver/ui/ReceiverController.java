@@ -1,6 +1,8 @@
 package com.optical.receiver.ui;
 
 import com.optical.receiver.assembler.FileAssembler;
+import com.optical.receiver.camera.CameraSource;
+import com.optical.receiver.camera.IpCameraCapture;
 import com.optical.receiver.camera.WebcamCapture;
 import com.optical.receiver.decoder.QRCodeDecoder;
 import com.optical.receiver.service.ReceptionService;
@@ -32,6 +34,10 @@ public class ReceiverController {
 
     private static final Logger log = LoggerFactory.getLogger(ReceiverController.class);
 
+    // Camera source options
+    private static final String CAMERA_LAPTOP = "Laptop Webcam";
+    private static final String CAMERA_PHONE = "Phone Camera (IP Webcam)";
+
     private final Stage stage;
     private final BorderPane root;
 
@@ -50,8 +56,15 @@ public class ReceiverController {
     private final Button selectOutputButton;
     private final Button saveButton;
 
+    // Camera source UI
+    private final ComboBox<String> cameraSourceCombo;
+    private final TextField ipCameraUrlField;
+    private final Button testConnectionButton;
+    private final Label connectionStatusLabel;
+    private final HBox ipCameraConfigBox;
+
     // Services
-    private final WebcamCapture webcamCapture;
+    private CameraSource cameraSource;
     private final QRCodeDecoder qrDecoder;
     private final ReceptionService receptionService;
     private final FileAssembler fileAssembler;
@@ -64,7 +77,7 @@ public class ReceiverController {
 
     public ReceiverController(Stage stage) {
         this.stage = stage;
-        this.webcamCapture = new WebcamCapture();
+        this.cameraSource = new WebcamCapture(); // default to laptop webcam
         this.qrDecoder = new QRCodeDecoder();
         this.receptionService = new ReceptionService();
         this.fileAssembler = new FileAssembler();
@@ -83,6 +96,43 @@ public class ReceiverController {
         VBox headerBox = new VBox(4, titleLabel, subtitleLabel);
         headerBox.setAlignment(Pos.CENTER);
         headerBox.setPadding(new Insets(20, 0, 10, 0));
+
+        // --- Camera Source Selection Section ---
+        Label cameraLabel = new Label("📷  Camera Source:");
+        cameraLabel.getStyleClass().add("info-label");
+
+        cameraSourceCombo = new ComboBox<>();
+        cameraSourceCombo.getItems().addAll(CAMERA_LAPTOP, CAMERA_PHONE);
+        cameraSourceCombo.setValue(CAMERA_LAPTOP);
+        cameraSourceCombo.getStyleClass().add("camera-combo");
+        cameraSourceCombo.setOnAction(e -> onCameraSourceChanged());
+
+        HBox cameraSelectBox = new HBox(10, cameraLabel, cameraSourceCombo);
+        cameraSelectBox.setAlignment(Pos.CENTER_LEFT);
+
+        // IP Camera URL input (hidden by default)
+        Label urlLabel = new Label("URL:");
+        urlLabel.getStyleClass().add("info-label");
+
+        ipCameraUrlField = new TextField(ReceiverConfig.DEFAULT_IP_CAMERA_URL);
+        ipCameraUrlField.setPromptText("http://192.168.1.5:8080");
+        ipCameraUrlField.setPrefWidth(280);
+        ipCameraUrlField.getStyleClass().add("ip-url-field");
+
+        testConnectionButton = new Button("🔗 Test");
+        testConnectionButton.getStyleClass().add("control-button");
+        testConnectionButton.setOnAction(e -> testIpCameraConnection());
+
+        connectionStatusLabel = new Label("");
+        connectionStatusLabel.getStyleClass().add("connection-status");
+
+        ipCameraConfigBox = new HBox(8, urlLabel, ipCameraUrlField, testConnectionButton, connectionStatusLabel);
+        ipCameraConfigBox.setAlignment(Pos.CENTER_LEFT);
+        ipCameraConfigBox.setVisible(false);
+        ipCameraConfigBox.setManaged(false);
+
+        VBox cameraSourceSection = new VBox(8, cameraSelectBox, ipCameraConfigBox);
+        cameraSourceSection.getStyleClass().add("section-box");
 
         // --- Camera Preview Section ---
         cameraPreview = new ImageView();
@@ -150,7 +200,7 @@ public class ReceiverController {
         infoSection.getStyleClass().add("section-box");
 
         // --- Main Layout ---
-        VBox centerContent = new VBox(15, cameraContainer, controlSection, infoSection);
+        VBox centerContent = new VBox(15, cameraSourceSection, cameraContainer, controlSection, infoSection);
         centerContent.setAlignment(Pos.TOP_CENTER);
         centerContent.setPadding(new Insets(10, 30, 30, 30));
 
@@ -179,22 +229,110 @@ public class ReceiverController {
         label.setText(prefix + " " + value);
     }
 
+    // --- Camera Source Selection ---
+
+    /**
+     * Handle camera source dropdown change.
+     * Shows/hides the IP camera URL input field.
+     */
+    private void onCameraSourceChanged() {
+        String selected = cameraSourceCombo.getValue();
+        boolean isIpCamera = CAMERA_PHONE.equals(selected);
+
+        ipCameraConfigBox.setVisible(isIpCamera);
+        ipCameraConfigBox.setManaged(isIpCamera);
+
+        connectionStatusLabel.setText("");
+
+        log.info("Camera source changed to: {}", selected);
+    }
+
+    /**
+     * Create the appropriate CameraSource based on the current UI selection.
+     */
+    private CameraSource createCameraSource() {
+        String selected = cameraSourceCombo.getValue();
+
+        if (CAMERA_PHONE.equals(selected)) {
+            String url = ipCameraUrlField.getText().trim();
+            if (url.isEmpty()) {
+                statusLabel.setText("Error: Please enter the IP camera URL");
+                return null;
+            }
+            IpCameraCapture ipCamera = new IpCameraCapture(url);
+            log.info("Using IP camera at: {}", url);
+            return ipCamera;
+        } else {
+            log.info("Using laptop webcam (index {})", ReceiverConfig.CAMERA_INDEX);
+            return new WebcamCapture();
+        }
+    }
+
+    /**
+     * Test the IP camera connection in a background thread.
+     */
+    private void testIpCameraConnection() {
+        String url = ipCameraUrlField.getText().trim();
+        if (url.isEmpty()) {
+            connectionStatusLabel.setText("⚠ Enter a URL first");
+            connectionStatusLabel.setStyle("-fx-text-fill: #ff9800;");
+            return;
+        }
+
+        testConnectionButton.setDisable(true);
+        connectionStatusLabel.setText("⏳ Testing...");
+        connectionStatusLabel.setStyle("-fx-text-fill: #90caf9;");
+
+        Thread testThread = new Thread(() -> {
+            IpCameraCapture testCapture = new IpCameraCapture(url);
+            boolean success = testCapture.testConnection();
+
+            Platform.runLater(() -> {
+                testConnectionButton.setDisable(false);
+                if (success) {
+                    connectionStatusLabel.setText("✓ Connected!");
+                    connectionStatusLabel.setStyle("-fx-text-fill: #66bb6a;");
+                    log.info("IP camera connection test passed: {}", url);
+                } else {
+                    connectionStatusLabel.setText("✗ Failed — check URL & WiFi");
+                    connectionStatusLabel.setStyle("-fx-text-fill: #ef5350;");
+                    log.warn("IP camera connection test failed: {}", url);
+                }
+            });
+        }, "ip-camera-test");
+        testThread.setDaemon(true);
+        testThread.start();
+    }
+
     // --- Scanning Control ---
 
     private void startScanning() {
         if (scanning.get()) return;
 
+        // Create camera source based on selection
+        CameraSource newSource = createCameraSource();
+        if (newSource == null) return;
+
+        // Release previous source if any
+        if (cameraSource != null) {
+            cameraSource.release();
+        }
+        cameraSource = newSource;
+
         statusLabel.setText("Opening camera...");
         startScanButton.setDisable(true);
+        cameraSourceCombo.setDisable(true);
+        ipCameraUrlField.setDisable(true);
+        testConnectionButton.setDisable(true);
 
         Thread openThread = new Thread(() -> {
-            boolean opened = webcamCapture.open();
+            boolean opened = cameraSource.open();
 
             Platform.runLater(() -> {
                 if (opened) {
                     scanning.set(true);
                     stopButton.setDisable(false);
-                    statusLabel.setText("Scanning for QR codes...");
+                    statusLabel.setText("Scanning for QR codes... [" + cameraSource.getDescription() + "]");
                     receptionService.reset();
                     resetInfoLabels();
 
@@ -203,10 +341,13 @@ public class ReceiverController {
                     scanThread.setDaemon(true);
                     scanThread.start();
 
-                    log.info("Camera scanning started");
+                    log.info("Camera scanning started: {}", cameraSource.getDescription());
                 } else {
-                    statusLabel.setText("Error: Could not open webcam");
+                    statusLabel.setText("Error: Could not open camera — " + cameraSource.getDescription());
                     startScanButton.setDisable(false);
+                    cameraSourceCombo.setDisable(false);
+                    ipCameraUrlField.setDisable(false);
+                    testConnectionButton.setDisable(false);
                 }
             });
         }, "camera-open");
@@ -217,16 +358,16 @@ public class ReceiverController {
     private void scanLoop() {
         long frameDurationMs = 1000 / ReceiverConfig.SCAN_FPS;
 
-        while (scanning.get() && webcamCapture.isRunning()) {
+        while (scanning.get() && cameraSource.isRunning()) {
             long frameStart = System.currentTimeMillis();
 
             try {
                 // Grab frame
-                Mat frame = webcamCapture.grabFrame();
+                Mat frame = cameraSource.grabFrame();
                 if (frame == null) continue;
 
                 // Convert to BufferedImage
-                BufferedImage bufferedImage = webcamCapture.matToBufferedImage(frame);
+                BufferedImage bufferedImage = cameraSource.matToBufferedImage(frame);
 
                 // Update camera preview on FX thread
                 if (bufferedImage != null) {
@@ -267,10 +408,13 @@ public class ReceiverController {
 
     private void stopScanning() {
         scanning.set(false);
-        webcamCapture.release();
+        cameraSource.release();
 
         startScanButton.setDisable(false);
         stopButton.setDisable(true);
+        cameraSourceCombo.setDisable(false);
+        ipCameraUrlField.setDisable(false);
+        testConnectionButton.setDisable(false);
 
         if (receptionService.getState() == ReceptionService.State.RECEIVING) {
             statusLabel.setText("Scanning stopped — transfer incomplete");
@@ -389,7 +533,9 @@ public class ReceiverController {
      */
     public void shutdown() {
         scanning.set(false);
-        webcamCapture.release();
+        if (cameraSource != null) {
+            cameraSource.release();
+        }
         log.info("Receiver controller shut down");
     }
 }

@@ -8,7 +8,8 @@ public class ReceiverLauncher {
 
     public static void main(String[] args) {
         // Load OpenCV native library before JavaFX starts
-        nu.pattern.OpenCV.loadShared();
+        // Note: loadShared() is not supported on Java >= 12; use loadLocally()
+        nu.pattern.OpenCV.loadLocally();
         System.out.println("OpenCV native library loaded successfully");
 
         ReceiverApp.main(args);
