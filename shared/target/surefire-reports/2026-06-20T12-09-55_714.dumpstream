@@ -1,0 +1,5 @@
+# Created at 2026-06-20T12:09:55.907
+Boot Manifest-JAR contains absolute paths in classpath 'E:\javaProject\Optical communication\optical-transfer\shared\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

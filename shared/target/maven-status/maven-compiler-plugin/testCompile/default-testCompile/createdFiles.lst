@@ -1,0 +1,4 @@
+com\optical\shared\util\HashUtilTest.class
+com\optical\shared\util\CompressionUtilTest.class
+com\optical\shared\protocol\PacketSerializerTest.class
+com\optical\shared\util\ChunkUtilTest.class

@@ -1,0 +1,4 @@
+com\optical\receiver\service\ReceptionServiceTest.class
+com\optical\integration\TransferIntegrationTest.class
+com\optical\receiver\decoder\QRCodeDecoderTest.class
+com\optical\receiver\assembler\FileAssemblerTest.class

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.optical.shared.protocol.PacketSerializerTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.259 s -- in com.optical.shared.protocol.PacketSerializerTest

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.optical.integration.TransferIntegrationTest" time="1.406" tests="3" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="E:\javaProject\Optical communication\optical-transfer\receiver\target\test-classes;E:\javaProject\Optical communication\optical-transfer\receiver\target\classes;E:\javaProject\Optical communication\optical-transfer\shared\target\shared-1.0-SNAPSHOT.jar;C:\Users\RS982\.m2\repository\org\openjfx\javafx-controls\21.0.5\javafx-controls-21.0.5.jar;C:\Users\RS982\.m2\repository\org\openjfx\javafx-controls\21.0.5\javafx-controls-21.0.5-win.jar;C:\Users\RS982\.m2\repository\org\openjfx\javafx-graphics\21.0.5\javafx-graphics-21.0.5.jar;C:\Users\RS982\.m2\repository\org\openjfx\javafx-graphics\21.0.5\javafx-graphics-21.0.5-win.jar;C:\Users\RS982\.m2\repository\org\openjfx\javafx-base\21.0.5\javafx-base-21.0.5.jar;C:\Users\RS982\.m2\repository\org\openjfx\javafx-base\21.0.5\javafx-base-21.0.5-win.jar;C:\Users\RS982\.m2\repository\org\openjfx\javafx-fxml\21.0.5\javafx-fxml-21.0.5.jar;C:\Users\RS982\.m2\repository\org\openjfx\javafx-fxml\21.0.5\javafx-fxml-21.0.5-win.jar;C:\Users\RS982\.m2\repository\org\openjfx\javafx-swing\21.0.5\javafx-swing-21.0.5.jar;C:\Users\RS982\.m2\repository\org\openjfx\javafx-swing\21.0.5\javafx-swing-21.0.5-win.jar;C:\Users\RS982\.m2\repository\com\google\zxing\core\3.5.4\core-3.5.4.jar;C:\Users\RS982\.m2\repository\com\google\zxing\javase\3.5.4\javase-3.5.4.jar;C:\Users\RS982\.m2\repository\org\jcommander\jcommander\1.85\jcommander-1.85.jar;C:\Users\RS982\.m2\repository\com\github\jai-imageio\jai-imageio-core\1.4.0\jai-imageio-core-1.4.0.jar;C:\Users\RS982\.m2\repository\org\openpnp\opencv\4.9.0-0\opencv-4.9.0-0.jar;C:\Users\RS982\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\RS982\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\RS982\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\RS982\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\RS982\.m2\repository\ch\qos\logback\logback-classic\1.5.8\logback-classic-1.5.8.jar;C:\Users\RS982\.m2\repository\ch\qos\logback\logback-core\1.5.8\logback-core-1.5.8.jar;C:\Users\RS982\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;C:\Users\RS982\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\RS982\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\RS982\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\RS982\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\RS982\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\RS982\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\RS982\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;E:\javaProject\Optical communication\optical-transfer\sender\target\sender-1.0-SNAPSHOT.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21.0.11\bin"/>
+    <property name="sun.java.command" value="C:\Users\RS982\AppData\Local\Temp\surefire641140628394286962\surefirebooter-20260620121000069_19.jar C:\Users\RS982\AppData\Local\Temp\surefire641140628394286962 2026-06-20T12-09-55_714-jvmRun1 surefire-20260620121000069_17tmp surefire_2-20260620121000069_18tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="E:\javaProject\Optical communication\optical-transfer\receiver\target\test-classes;E:\javaProject\Optical communication\optical-transfer\receiver\target\classes;E:\javaProject\Optical communication\optical-transfer\shared\target\shared-1.0-SNAPSHOT.jar;C:\Users\RS982\.m2\repository\org\openjfx\javafx-controls\21.0.5\javafx-controls-21.0.5.jar;C:\Users\RS982\.m2\repository\org\openjfx\javafx-controls\21.0.5\javafx-controls-21.0.5-win.jar;C:\Users\RS982\.m2\repository\org\openjfx\javafx-graphics\21.0.5\javafx-graphics-21.0.5.jar;C:\Users\RS982\.m2\repository\org\openjfx\javafx-graphics\21.0.5\javafx-graphics-21.0.5-win.jar;C:\Users\RS982\.m2\repository\org\openjfx\javafx-base\21.0.5\javafx-base-21.0.5.jar;C:\Users\RS982\.m2\repository\org\openjfx\javafx-base\21.0.5\javafx-base-21.0.5-win.jar;C:\Users\RS982\.m2\repository\org\openjfx\javafx-fxml\21.0.5\javafx-fxml-21.0.5.jar;C:\Users\RS982\.m2\repository\org\openjfx\javafx-fxml\21.0.5\javafx-fxml-21.0.5-win.jar;C:\Users\RS982\.m2\repository\org\openjfx\javafx-swing\21.0.5\javafx-swing-21.0.5.jar;C:\Users\RS982\.m2\repository\org\openjfx\javafx-swing\21.0.5\javafx-swing-21.0.5-win.jar;C:\Users\RS982\.m2\repository\com\google\zxing\core\3.5.4\core-3.5.4.jar;C:\Users\RS982\.m2\repository\com\google\zxing\javase\3.5.4\javase-3.5.4.jar;C:\Users\RS982\.m2\repository\org\jcommander\jcommander\1.85\jcommander-1.85.jar;C:\Users\RS982\.m2\repository\com\github\jai-imageio\jai-imageio-core\1.4.0\jai-imageio-core-1.4.0.jar;C:\Users\RS982\.m2\repository\org\openpnp\opencv\4.9.0-0\opencv-4.9.0-0.jar;C:\Users\RS982\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\RS982\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\RS982\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\RS982\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\RS982\.m2\repository\ch\qos\logback\logback-classic\1.5.8\logback-classic-1.5.8.jar;C:\Users\RS982\.m2\repository\ch\qos\logback\logback-core\1.5.8\logback-core-1.5.8.jar;C:\Users\RS982\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;C:\Users\RS982\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\RS982\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\RS982\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\RS982\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\RS982\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\RS982\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\RS982\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;E:\javaProject\Optical communication\optical-transfer\sender\target\sender-1.0-SNAPSHOT.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\RS982"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-04-21"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21.0.11"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="E:\javaProject\Optical communication\optical-transfer\receiver"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\RS982\AppData\Local\Temp\surefire641140628394286962\surefirebooter-20260620121000069_19.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.11+9-LTS-211"/>
+    <property name="user.name" value="RS982"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2026.1.3\plugins\maven\lib\intellij.maven.rt\maven-event-listener.jar"/>
+    <property name="localRepository" value="C:\Users\RS982\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\RS982\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2026.1.3"/>
+    <property name="java.version" value="21.0.11"/>
+    <property name="user.dir" value="E:\javaProject\Optical communication\optical-transfer\receiver"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="jansi.passthrough" value="true"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21.0.11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\RS982\AppData\Local\Microsoft\WindowsApps;C:\Users\RS982\AppData\Local\Programs\Microsoft VS Code Insiders\bin;C:\Users\RS982\AppData\Local\Programs\Antigravity IDE\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2026.1.3\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.11+9-LTS-211"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="maven.repo.local" value="C:\Users\RS982\.m2\repository"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="fullTransferPipeline_largerFile" classname="com.optical.integration.TransferIntegrationTest" time="1.262">
+    <system-out><![CDATA[12:10:00,710 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.8
+12:10:00,711 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46271dd6 - No custom configurators were discovered as a service.
+12:10:00,711 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46271dd6 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+12:10:00,712 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46271dd6 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+12:10:00,715 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+12:10:00,715 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+12:10:00,721 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46271dd6 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 4 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+12:10:00,721 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46271dd6 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+12:10:00,722 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46271dd6 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+12:10:00,722 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+12:10:00,725 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/E:/javaProject/Optical%20communication/optical-transfer/receiver/target/classes/logback.xml]
+12:10:00,725 |-WARN in ch.qos.logback.classic.util.DefaultJoranConfigurator@11bb571c - Resource [logback.xml] occurs multiple times on the classpath.
+12:10:00,725 |-WARN in ch.qos.logback.classic.util.DefaultJoranConfigurator@11bb571c - Resource [logback.xml] occurs at [file:/E:/javaProject/Optical%20communication/optical-transfer/receiver/target/classes/logback.xml]
+12:10:00,725 |-WARN in ch.qos.logback.classic.util.DefaultJoranConfigurator@11bb571c - Resource [logback.xml] occurs at [jar:file:/E:/javaProject/Optical%20communication/optical-transfer/sender/target/sender-1.0-SNAPSHOT.jar!/logback.xml]
+12:10:00,811 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STDOUT]
+12:10:00,811 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+12:10:00,817 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+12:10:00,837 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [FILE]
+12:10:00,837 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+12:10:00,843 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+12:10:00,843 |-INFO in ch.qos.logback.core.FileAppender[FILE] - File property is set to [logs/receiver.log]
+12:10:00,845 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.optical.receiver] to DEBUG
+12:10:00,845 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.optical.shared] to DEBUG
+12:10:00,845 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.optical.receiver.decoder] to INFO
+12:10:00,845 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+12:10:00,845 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[ROOT]
+12:10:00,845 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to Logger[ROOT]
+12:10:00,845 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@7c51f34b - End of configuration.
+12:10:00,846 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@5495333e - Registering current configuration as safe fallback point
+12:10:00,846 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46271dd6 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 124 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+
+12:10:00.851 [main] INFO  c.o.sender.service.TransferService - Preparing transfer for file: bigger_song.mp3
+12:10:00.853 [main] INFO  c.o.sender.service.TransferService - Read 10000 bytes from bigger_song.mp3
+12:10:00.856 [main] INFO  c.o.sender.service.TransferService - SHA-256 hash: 712fc649b65a0dbb3693c09e07df8fae43399119a6782e55a9b8995846f09f24
+12:10:00.858 [main] INFO  c.o.sender.service.TransferService - Compressed: 10000 bytes → 10023 bytes (ratio: 100.2%)
+12:10:00.859 [main] INFO  c.o.sender.service.TransferService - Transfer ID: b83e0315-59e0-432f-9b11-a5752a197aab
+12:10:00.860 [main] INFO  c.optical.sender.chunk.FileChunker - Splitting 10023 bytes into 11 chunks of max 1000 bytes each
+12:10:00.861 [main] INFO  c.optical.sender.chunk.FileChunker - Created 11 chunk packets for transfer b83e0315-59e0-432f-9b11-a5752a197aab
+12:10:01.005 [main] INFO  c.o.sender.service.TransferService - Transfer prepared: 13 total packets (1 header + 11 chunks + 1 end)
+12:10:01.250 [main] INFO  c.o.r.service.ReceptionService - State changed to: RECEIVING
+12:10:01.251 [main] INFO  c.o.r.service.ReceptionService - Transfer header received — ID: b83e0315-59e0-432f-9b11-a5752a197aab, File: bigger_song.mp3, Size: 10000, Chunks: 11
+12:10:01.359 [main] DEBUG c.o.r.service.ReceptionService - Received chunk 1/11
+12:10:01.418 [main] DEBUG c.o.r.service.ReceptionService - Received chunk 2/11
+12:10:01.466 [main] DEBUG c.o.r.service.ReceptionService - Received chunk 3/11
+12:10:01.516 [main] DEBUG c.o.r.service.ReceptionService - Received chunk 4/11
+12:10:01.564 [main] DEBUG c.o.r.service.ReceptionService - Received chunk 5/11
+12:10:01.609 [main] DEBUG c.o.r.service.ReceptionService - Received chunk 6/11
+12:10:01.650 [main] DEBUG c.o.r.service.ReceptionService - Received chunk 7/11
+12:10:01.693 [main] DEBUG c.o.r.service.ReceptionService - Received chunk 8/11
+12:10:01.742 [main] DEBUG c.o.r.service.ReceptionService - Received chunk 9/11
+12:10:01.784 [main] DEBUG c.o.r.service.ReceptionService - Received chunk 10/11
+12:10:01.815 [main] DEBUG c.o.r.service.ReceptionService - Received chunk 11/11
+12:10:01.815 [main] INFO  c.o.r.service.ReceptionService - State changed to: COMPLETE
+12:10:01.816 [main] INFO  c.o.r.service.ReceptionService - All 11 chunks received! Ready for assembly.
+12:10:01.847 [main] INFO  c.o.r.service.ReceptionService - Transfer END packet received. Chunks: 11/11
+12:10:01.847 [main] INFO  c.o.r.service.ReceptionService - State changed to: COMPLETE
+12:10:01.851 [main] INFO  c.o.receiver.assembler.FileAssembler - Starting file assembly: 11 chunks, expected file: bigger_song.mp3
+12:10:01.851 [main] INFO  c.o.receiver.assembler.FileAssembler - Merging 11 chunks...
+12:10:01.852 [main] INFO  c.o.receiver.assembler.FileAssembler - Merged compressed data: 10023 bytes
+12:10:01.852 [main] INFO  c.o.receiver.assembler.FileAssembler - Decompressing GZIP data...
+12:10:01.852 [main] INFO  c.o.receiver.assembler.FileAssembler - Decompressed: 10023 bytes → 10000 bytes
+12:10:01.853 [main] INFO  c.o.receiver.assembler.FileAssembler - Hash verification — expected: 712fc649b65a0dbb3693c09e07df8fae43399119a6782e55a9b8995846f09f24, actual: 712fc649b65a0dbb3693c09e07df8fae43399119a6782e55a9b8995846f09f24
+12:10:01.853 [main] INFO  c.o.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+12:10:01.856 [main] INFO  c.o.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit8798794636737980478\output2\bigger_song.mp3 (10000 bytes)
+]]></system-out>
+  </testcase>
+  <testcase name="fullTransferPipeline_smallFile" classname="com.optical.integration.TransferIntegrationTest" time="0.044">
+    <system-out><![CDATA[12:10:01.873 [main] INFO  c.o.sender.service.TransferService - Preparing transfer for file: test_song.mp3
+12:10:01.873 [main] INFO  c.o.sender.service.TransferService - Read 60 bytes from test_song.mp3
+12:10:01.873 [main] INFO  c.o.sender.service.TransferService - SHA-256 hash: 10d598cb22bd5c1e13784f6dd198364bac130dc423c63887e68568897124e0bc
+12:10:01.874 [main] INFO  c.o.sender.service.TransferService - Compressed: 60 bytes → 77 bytes (ratio: 128.3%)
+12:10:01.874 [main] INFO  c.o.sender.service.TransferService - Transfer ID: cf7def64-7be0-4793-835d-a136e3139832
+12:10:01.874 [main] INFO  c.optical.sender.chunk.FileChunker - Splitting 77 bytes into 1 chunks of max 1000 bytes each
+12:10:01.874 [main] INFO  c.optical.sender.chunk.FileChunker - Created 1 chunk packets for transfer cf7def64-7be0-4793-835d-a136e3139832
+12:10:01.874 [main] INFO  c.o.sender.service.TransferService - Transfer prepared: 3 total packets (1 header + 1 chunks + 1 end)
+12:10:01.886 [main] INFO  c.o.r.service.ReceptionService - State changed to: RECEIVING
+12:10:01.886 [main] INFO  c.o.r.service.ReceptionService - Transfer header received — ID: cf7def64-7be0-4793-835d-a136e3139832, File: test_song.mp3, Size: 60, Chunks: 1
+12:10:01.897 [main] DEBUG c.o.r.service.ReceptionService - Received chunk 1/1
+12:10:01.898 [main] INFO  c.o.r.service.ReceptionService - State changed to: COMPLETE
+12:10:01.898 [main] INFO  c.o.r.service.ReceptionService - All 1 chunks received! Ready for assembly.
+12:10:01.911 [main] INFO  c.o.r.service.ReceptionService - Transfer END packet received. Chunks: 1/1
+12:10:01.911 [main] INFO  c.o.r.service.ReceptionService - State changed to: COMPLETE
+12:10:01.911 [main] INFO  c.o.receiver.assembler.FileAssembler - Starting file assembly: 1 chunks, expected file: test_song.mp3
+12:10:01.911 [main] INFO  c.o.receiver.assembler.FileAssembler - Merging 1 chunks...
+12:10:01.911 [main] INFO  c.o.receiver.assembler.FileAssembler - Merged compressed data: 77 bytes
+12:10:01.912 [main] INFO  c.o.receiver.assembler.FileAssembler - Decompressing GZIP data...
+12:10:01.912 [main] INFO  c.o.receiver.assembler.FileAssembler - Decompressed: 77 bytes → 60 bytes
+12:10:01.912 [main] INFO  c.o.receiver.assembler.FileAssembler - Hash verification — expected: 10d598cb22bd5c1e13784f6dd198364bac130dc423c63887e68568897124e0bc, actual: 10d598cb22bd5c1e13784f6dd198364bac130dc423c63887e68568897124e0bc
+12:10:01.912 [main] INFO  c.o.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+12:10:01.913 [main] INFO  c.o.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit13336678670691396122\output\test_song.mp3 (60 bytes)
+]]></system-out>
+  </testcase>
+  <testcase name="transferPipeline_withRetransmission" classname="com.optical.integration.TransferIntegrationTest" time="0.074">
+    <system-out><![CDATA[12:10:01.920 [main] INFO  c.o.sender.service.TransferService - Preparing transfer for file: retrans.mp3
+12:10:01.921 [main] INFO  c.o.sender.service.TransferService - Read 40 bytes from retrans.mp3
+12:10:01.921 [main] INFO  c.o.sender.service.TransferService - SHA-256 hash: bae2fead0c67e905d5299c7c51d9c16a8df180e4cba1add9b1e384dbe17655dc
+12:10:01.922 [main] INFO  c.o.sender.service.TransferService - Compressed: 40 bytes → 57 bytes (ratio: 142.5%)
+12:10:01.922 [main] INFO  c.o.sender.service.TransferService - Transfer ID: 4f1489e7-afcb-4eda-90aa-e3e23e6a03d8
+12:10:01.922 [main] INFO  c.optical.sender.chunk.FileChunker - Splitting 57 bytes into 1 chunks of max 1000 bytes each
+12:10:01.922 [main] INFO  c.optical.sender.chunk.FileChunker - Created 1 chunk packets for transfer 4f1489e7-afcb-4eda-90aa-e3e23e6a03d8
+12:10:01.922 [main] INFO  c.o.sender.service.TransferService - Transfer prepared: 3 total packets (1 header + 1 chunks + 1 end)
+12:10:01.937 [main] INFO  c.o.r.service.ReceptionService - State changed to: RECEIVING
+12:10:01.938 [main] INFO  c.o.r.service.ReceptionService - Transfer header received — ID: 4f1489e7-afcb-4eda-90aa-e3e23e6a03d8, File: retrans.mp3, Size: 40, Chunks: 1
+12:10:01.950 [main] INFO  c.o.r.service.ReceptionService - Transfer END packet received. Chunks: 0/1
+12:10:01.973 [main] DEBUG c.o.r.service.ReceptionService - Received chunk 1/1
+12:10:01.974 [main] INFO  c.o.r.service.ReceptionService - State changed to: COMPLETE
+12:10:01.974 [main] INFO  c.o.r.service.ReceptionService - All 1 chunks received! Ready for assembly.
+12:10:01.984 [main] INFO  c.o.r.service.ReceptionService - Transfer END packet received. Chunks: 1/1
+12:10:01.984 [main] INFO  c.o.r.service.ReceptionService - State changed to: COMPLETE
+12:10:01.984 [main] INFO  c.o.receiver.assembler.FileAssembler - Starting file assembly: 1 chunks, expected file: retrans.mp3
+12:10:01.985 [main] INFO  c.o.receiver.assembler.FileAssembler - Merging 1 chunks...
+12:10:01.985 [main] INFO  c.o.receiver.assembler.FileAssembler - Merged compressed data: 57 bytes
+12:10:01.985 [main] INFO  c.o.receiver.assembler.FileAssembler - Decompressing GZIP data...
+12:10:01.985 [main] INFO  c.o.receiver.assembler.FileAssembler - Decompressed: 57 bytes → 40 bytes
+12:10:01.985 [main] INFO  c.o.receiver.assembler.FileAssembler - Hash verification — expected: bae2fead0c67e905d5299c7c51d9c16a8df180e4cba1add9b1e384dbe17655dc, actual: bae2fead0c67e905d5299c7c51d9c16a8df180e4cba1add9b1e384dbe17655dc
+12:10:01.985 [main] INFO  c.o.receiver.assembler.FileAssembler - ✓ SHA-256 hash verified successfully
+12:10:01.988 [main] INFO  c.o.receiver.assembler.FileAssembler - ✓ File saved: C:\Users\RS982\AppData\Local\Temp\junit7293575617425551432\output3\retrans.mp3 (40 bytes)
+]]></system-out>
+  </testcase>
+</testsuite>

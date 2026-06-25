@@ -1,0 +1,8 @@
+com\optical\shared\model\TransferHeader.class
+com\optical\shared\model\TransferEnd.class
+com\optical\shared\util\CompressionUtil.class
+com\optical\shared\model\PacketType.class
+com\optical\shared\model\ChunkPacket.class
+com\optical\shared\protocol\PacketSerializer.class
+com\optical\shared\util\HashUtil.class
+com\optical\shared\util\ChunkUtil.class
